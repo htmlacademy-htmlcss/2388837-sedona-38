@@ -3,7 +3,7 @@
 * Студент: [Тигран Гулян](https://up.htmlacademy.ru/htmlcss/38/user/2388837).
 * Наставник: `Евгения Подопригора`.
 
----
+---sdadas
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
 _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`._
