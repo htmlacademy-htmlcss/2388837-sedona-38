@@ -1,9 +1,9 @@
 # Личный проект «Седона»
 
 * Студент: [Тигран Гулян](https://up.htmlacademy.ru/htmlcss/38/user/2388837).
-* Наставник: `Неизвестно`.
+* Наставник: `Евгения Подопригора`.
 
----
+
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
 _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`._
