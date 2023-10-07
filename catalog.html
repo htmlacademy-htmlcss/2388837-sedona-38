@@ -4,44 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <title>catalog</title>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
-     <header class="header">
+    <header class="header">
         <a href="#" class="header__link">
             <img src="imges/logo-sedon.svg" alt="Логотип седон" width="140" height="70" class="header__link-logo">
         </a>
         <nav class="header__navigarion">
             <ul class="header__navigarion-list">
                 <li class="header__navigarion-item">
-                    <a href="index.html"class="header__navigarion-link ">Главная </a>
+                    <a href="index.html" class="header__navigarion-link ">Главная </a>
                 </li>
                 <li class="header__navigarion-item">
                     <a href="#" class="header__navigarion-link">О Седоне </a>
                 </li>
                 <li class="header__navigarion-item">
-                    <a  class="header__navigarion-link header__navigarion-active">Гостиницы</a>
+                    <a class="header__navigarion-link header__navigarion-active">Гостиницы</a>
                 </li>
             </ul>
         </nav>
         <ul class="header__list">
             <li class="header__list-item">
-                <a href="#" class="header__list-link">
-                        <img src="imges/lupa.svg" alt="Поиск" width="18" height="17" class="header__list-image">
+                <a href="#" class="header__list-link-lupa">
+                    <span class="visually-hidden">
+                        Искать
+                    </span>
                 </a>
             </li>
             <li class="header__list-item">
-                <a href="#" class="header__list-link">
-                        <img src="imges/like.svg" alt="Избранное" width="18" height="17" class="<header__list-image></header__list-image>">
+                <a href="#" class="header__list-link-liki">
+                    <span class="visually-hidden">
+                        Избранное
+                    </span>
                 </a>
             </li>
             <li class="header__list-item">
-                <a href="header__list-link" class="">Хочу сюда!</a>
+                <a href="header__list-btnlink" class="">Хочу сюда!</a>
             </li>
         </ul>
     </header>
     <main class="main-catalog">
-        <section class="heder">
+        <section class="heder-main">
             <h1 class="heder__title">
                 Гостиницы Седоны
             </h1>
@@ -157,14 +162,14 @@
                     <p class="cards-rang">Рейтинг: 8,5</p>
                 </li>
                 <li class="cards-hostel__item">
-                   <img src="imges/hotel-card/Villas-at-Poco-Diablo.jpg" alt="" class="cards-hostel__item-hostel" width="300" height="212">
+                    <img src="imges/hotel-card/Villas-at-Poco-Diablo.jpg" alt="" class="cards-hostel__item-hostel" width="300" height="212">
                     <h3 class="cards-hostel__title">Villas at Poco Diablo</h3>
                     <p class="cards-hostel__description">Гостиница<b>От 5000 ₽</b></p>
                     <button class="cards-hostel__button">Подробнее</button>
                     <button class="cards-hostel__button">В избранное</button>
                     <ul class="list-star">
                         <li class="list-star__item">
-                           <img src="imges/star.svg" alt="" class="list-star__item-image" width="18" height="17">
+                            <img src="imges/star.svg" alt="" class="list-star__item-image" width="18" height="17">
                         </li>
                         <li class="list-star__item">
                             <img src="imges/star.svg" alt="" class="list-star__item-image" width="18" height="17">
@@ -186,7 +191,7 @@
                     <button class="cards-hostel__button">В избранное</button>
                     <ul class="list-star">
                         <li class="list-star__item">
-                           <img src="imges/star.svg" alt="" class="list-star__item-image" width="18" height="17">
+                            <img src="imges/star.svg" alt="" class="list-star__item-image" width="18" height="17">
                         </li>
                         <li class="list-star__item">
                             <img src="imges/star.svg" alt="" class="list-star__item-image" width="18" height="17">
@@ -236,11 +241,23 @@
             </ul>
         </section>
         <section class="form">
-            <h2 class="form__title">
+            <h2 class="form__title visually-hidden">
                 Подпишитесь на рассылку
             </h2>
-            <p class="form__title">
-                Только полезная информация и никакого спама, честное бойскаутское!
+            <p class="form__description">
+                Только полезная информация и никакого спама,<br> честное бойскаутское!
+            </p>
+            <form action="https://echo.htmlacademy.ru/" method="post" class="form__form">
+                <input type="email" name="email" placeholder="Ваш e-mail" class="form__form-email">
+                <button type="submit" class="form__form-button">Подписаться</button>
+            </form>
+        </section>
+        <section class="form">
+            <h2 class="form__title visually-hidden">
+                Подпишитесь на рассылку
+            </h2>
+            <p class="form__description">
+                Только полезная информация и никакого спама,<br> честное бойскаутское!
             </p>
             <form action="https://echo.htmlacademy.ru/" method="post" class="form__form">
                 <input type="email" name="email" placeholder="Ваш e-mail" class="form__form-email">
