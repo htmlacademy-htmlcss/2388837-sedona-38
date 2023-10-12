@@ -10,54 +10,61 @@
 <body>
     <div class="body-contener">
         <header class="header">
-            <a href="#" class="header__link">
-                <img src="imges/logo-sedon.svg" alt="Логотип седон" width="140" height="70" class="header__link-logo">
-            </a>
-            <nav class="header__navigarion">
-                <ul class="header__navigarion-list">
-                    <li class="header__navigarion-item">
-                        <a class="header__navigarion-link header__navigarion-active">Главная </a>
+            <div class="header-contener">
+                <a href="#" class="header__link">
+                    <img src="imges/logo-sedon.svg" alt="Логотип седон" width="140" height="70" class="header__link-logo">
+                </a>
+                <nav class="header__navigarion">
+                    <ul class="header__navigarion-list">
+                        <li class="header__navigarion-item">
+                            <a class="header__navigarion-link header__navigarion-active">Главная </a>
+                        </li>
+                        <li class="header__navigarion-item">
+                            <a href="#" class="header__navigarion-link">О Седоне </a>
+                        </li>
+                        <li class="header__navigarion-item">
+                            <a href="catalog.html" class="header__navigarion-link">Гостиницы</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a href="#" class="item_link-search">
+                            <span class="visually-hidden">Поиск</span>
+                        </a>
                     </li>
-                    <li class="header__navigarion-item">
-                        <a href="#" class="header__navigarion-link">О Седоне </a>
+                    <li class="header__item">
+                        <a href="#" class="item_link-like">
+                            <span class="visually-hidden">Избранное</span>
+                        </a>
                     </li>
-                    <li class="header__navigarion-item">
-                        <a href="catalog.html" class="header__navigarion-link">Гостиницы</a>
+                    <li class="header__item">
+                        <a class="header__item-link btn-bruwn" href="#">Хочу сюда</a>
                     </li>
                 </ul>
-            </nav>
-            <ul class="header__list">
-                <li class="header__item">
-                    <a href="#" class="item_link-lupa">
-                        <span class="visually-hidden">Поиск</span>
-                    </a>
-                </li>
-                <li class="header__item">
-                    <a href="#" class="item_link-like">
-                        <span class="visually-hidden">Избранное</span>
-                    </a>
-                </li>
-                <li class="header__item">
-                    <a  class="header__item-link btn-bruwn" href="#">Хочу сюда</a>
-                </li>
-            </ul>
+            </div>
         </header>
-        <main class="main-index">
+        <main class="main-index main-contener">
             <section class="welcome">
                 <h1 class="visually-hidden">
                     Sedon-это место для отдыха.
                 </h1>
                 <img src="imges/welcome-sedone.svg" alt="Добро пожаловать в Седон" width="458" height="352" class="welcome__image">
             </section>
+            <section class="citi-sedon">
+                <div class="citi-sedon__contener">
+                    <h2 class="citi-sedon__title">
+                        Седона — небольшой городок в Аризоне,<br>заслуживающий большего!
+                    </h2>
+                    <p class="citi-sedon__description">
+                        Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
+                    </p>
+                </div>
+            </section>
             <section class="advantages">
-                <h2 class="advantages__title">
-                    Седона — небольшой городок в Аризоне,заслуживающий большего!
-                </h2>
-                <p class="advantages__description">
-                    Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
-                </p>
+                <h2 class="visually-hidden">Список преимуществ</h2>
                 <ul class="advantages__list">
-                    <li class="advantages__list-item advantages__list-blue">
+                    <li class="advantages__list-box advantages__list-blue">
                         <h3 class="advantages__list-title">
                             Настоящий городок
                         </h3>
@@ -68,7 +75,7 @@
                     <li class="advantages__list-item">
                         <img src="imges/hostel-usa.jpg" alt="Вид из отеля" width="800" height="385" class="advantages__list-image">
                     </li>
-                    <li class="advantages__list-item advantages__list-silver">
+                    <li class="advantages__list-box advantages__list-silver">
                         <h3 class="advantages__list-title">
                             Небольшая площадь
                         </h3>
@@ -76,7 +83,7 @@
                             Все достопримечательности находятся очень близко
                         </p>
                     </li>
-                    <li class="advantages__list-item advantages__list-darcksilver">
+                    <li class="advantages__list-box advantages__list-darcksilver">
                         <h3 class="advantages__list-title ">
                             Красивая дорога
                         </h3>
@@ -84,7 +91,7 @@
                             Ехать в Седону из Лас-Вегаса совсем не скучно!
                         </p>
                     </li>
-                    <li class="advantages__list-item advantages__list-silver">
+                    <li class="advantages__list-box advantages__list-silver">
                         <h3 class="advantages__list-title">
                             Мало туристов
                         </h3>
@@ -95,7 +102,7 @@
                     <li class="advantages__list-item">
                         <img src="imges/skali.jpg" alt="Каньён" width="800" height="385" class="advantages__list-image">
                     </li>
-                    <li class="advantages__list-item advantages__list-blue ">
+                    <li class="advantages__list-box advantages__list-blue ">
                         <h3 class="advantages__list-title ">
                             Там есть мост дьявола
                         </h3>
@@ -105,29 +112,34 @@
                     </li>
                 </ul>
             </section>
+            <section class="going-sedon">
+                <div class="going-sedon-contener">
+                    <h2 class="going-sedon__title">
+                        Приезжайте в Седону отдохнуть в комфорте и уюте!
+                    </h2>
+                    <p class="going-sedon__description">
+                        Опытный персонал и качественное обслуживание!
+                    </p>
+                </div>
+            </section>
             <section class="servis">
-                <h2 class="servis__title">
-                    Приезжайте в Седону отдохнуть в комфорте и уюте!
-                </h2>
-                <p class="servis__description">
-                    Опытный персонал и качественное обслуживание!
-                </p>
+                <h2 class="visually-hidden">Услуги</h2>
                 <ul class="servis__list">
-                    <li class="servis__list-item advantages__list-darcksilver">
+                    <li class="advantages__list-box advantages__list-darcksilver">
                         <span class="item__image-hostel"></span>
                         <h3 class="servis__list-title">Жильё</h3>
                         <p class="servis__list-description">
                             Рекомендуем пожитьв настоящем мотеле,всё как в кино!
                         </p>
                     </li>
-                    <li class="servis__list-item advantages__list-silver">
+                    <li class="advantages__list-box advantages__list-silver">
                         <span class="item__image-food"></span>
                         <h3 class="servis__list-title">Еда</h3>
                         <p class="servis__list-description">
                             Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
                         </p>
                     </li>
-                    <li class="servis__list-item advantages__list-darcksilver">
+                    <li class="advantages__list-box advantages__list-darcksilver">
                         <span class="item__image-suvenir"></span>
                         <h3 class="servis__list-title">Сувениры</h3>
                         <p class="servis__list-description">
@@ -137,15 +149,17 @@
                 </ul>
             </section>
             <section class="interested">
-                <h2 class="interested__title">
-                    Заинтересовались?
-                </h2>
-                <p class="interested__description">
-                    Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне
-                </p>
-                <a href="#" class="interested__link btn-bruwn">
-                    ПОИСК ГОСТИНИЦЫ В седоне
-                </a>
+                <div class="interested-contener">
+                    <h2 class="interested__title">
+                        Заинтересовались?
+                    </h2>
+                    <p class="interested__description">
+                        Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне
+                    </p>
+                    <a href="#" class="interested__link btn-bruwn">
+                        ПОИСК ГОСТИНИЦЫ В седоне
+                    </a>
+                </div>
             </section>
             <section class="form">
                 <div class="">
@@ -162,29 +176,33 @@
                 </div>
             </section>
         </main>
+
         <footer class="footer">
-            <ul class="footer__list">
-                <li class="footer__list-item">
-                    <a href="" class="footer__list-link">
-                        <img src="imges/massange/massange-vk.svg" alt="Вк" width="24" height="14" class="footer__list-image">
-                    </a>
-                </li>
-                <li class="footer__list-item">
-                    <a href="" class="footer__list-link">
-                        <img src="imges/massange/massange-tg.svg" alt="Тг" width="24" height="14" class="footer__list-image">
-                    </a>
-                </li>
-                <li class="footer__list-item">
-                    <a href="" class="footer__list-link">
-                        <img src="imges/massange/massange-youtube.svg" alt="Ютуб" width="24" height="14" class="footer__list-image">
-                    </a>
-                </li>
-            </ul>
-            <address class="address">
-                <a href="tel:+78128121212" class="address_phone">+7 (812) 812-12-12</a>
-            </address>
-            <img src="imges/logo-htmlacademy.svg" alt="Логотип HTMLacademy" width="115" height="32" class="footer__logo-html">
+            <div class="footer-contener">
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="" class="footer__list-link">
+                            <img src="imges/massange/massange-vk.svg" alt="Вк" width="24" height="14" class="footer__list-image">
+                        </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="" class="footer__list-link">
+                            <img src="imges/massange/massange-tg.svg" alt="Тг" width="24" height="14" class="footer__list-image">
+                        </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="" class="footer__list-link">
+                            <img src="imges/massange/massange-youtube.svg" alt="Ютуб" width="24" height="14" class="footer__list-image">
+                        </a>
+                    </li>
+                </ul>
+                <address class="address">
+                    <a href="tel:+78128121212" class="address_phone">+7 (812) 812-12-12</a>
+                </address>
+                <img src="imges/logo-htmlacademy.svg" alt="Логотип HTMLacademy" width="115" height="32" class="footer__logo-html">
+            </div>
         </footer>
+
     </div>
 </body>
 
