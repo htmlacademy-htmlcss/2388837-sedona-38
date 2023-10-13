@@ -24,53 +24,24 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-*{
-    box-sizing: border-box;
-}
-html{
-    height: 100%;
-}
 body{
-    margin: 0;
     font-family: "PT Sans", sans-serif;
     font-size: 24px;
     line-height: 21px;
     color: #000;
     background-color: #f2f2f2;
-    font-weight:400;
+    font-weight: 400px;
+}
+ul{
+    list-style: none;
+}
+button, input, select{
+    font-family: inherit;
 }
 .body-contener{
     width: 1200px;
     margin: 0 auto;
     background-color: white;
-    display: flex;
-    flex-direction: column;
-}
-.main-contener{
-    flex-grow: 1;
-}
-ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-button, input, select{
-    font-family: inherit;
-}
-.header-contener{
-    width: 1060px;
-    margin: 0 auto;
-    display: flex;
-}
-.header__link{
-    margin-right:30px;
-}
-.header__navigarion{
-    width: 339px;
-    margin-right: 285px;
-}
-.header__list{
-    width:268px;
 }
 .header__navigarion,.header__list{
     text-align: center;
@@ -78,7 +49,6 @@ button, input, select{
 .header__navigarion-link{
     line-height: 24px;
     font-weight: 700;
-    text-align: center;
     color: inherit;
     font-size: 20px;
     text-decoration: none;
@@ -104,39 +74,19 @@ button, input, select{
     background-image: url(../imges/konvert.jpg);
     background-size: 100% auto;
     background-repeat: no-repeat;
-    padding-top: 51px;
-    padding-bottom: 82px;
-    text-align: center;
+    padding: 51px 371px 82px 371px;
     background-color: aliceblue;
-}
-.advantages-contener{
-width: 651px;
-    margin: 0 auto;
 }
 .advantages__list, .servis__list{
     text-align: center;
 }
-.servis__list{
-    display: flex;
-    flex-wrap: wrap;
-}
-.advantages__list{
-    display: flex;
-    flex-wrap: wrap;
-}
-.citi-sedon__contener{
-    padding: 69px 275px 69px 275px;
-}
-.citi-sedon__title{
-text-align: center;
+.advantages__title{
 font-size: 30px;
 font-weight: 700;
 line-height: 36px;
 text-transform: uppercase;
-    margin-bottom: 25px;
 }
-.citi-sedon__description{
-   text-align: center;
+.advantages__description{
 color:  #333;
 font-size: 22px;
 font-weight: 400;
@@ -184,31 +134,19 @@ background: rgba(131, 179, 211, 0.12);
 .advantages__list-darcksilver{
     background:  rgba(131, 179, 211, 0.20);
 }
-.advantages__list-box{
-width:400px;
-height: 385px;
-}
-.going-sedon-contener{
-    padding: 64px 355px 64px 355px;
-}
-.going-sedon__title{
-    width: 505px;
-    text-align: center;
+.servis__title{
+text-align: center;
 font-size: 30px;
 font-weight: 700;
 line-height: 36px;
 text-transform: uppercase;
-    margin-bottom: 20px;
 }
-.going-sedon__description{
+.servis__description{
     color: #333;
 text-align: center;
 font-size: 22px;
 font-weight: 400;
 line-height: 26px;
-}
-.interested-contener{
-    padding:69px 304px 96px 304px;
 }
 .interested{
     text-align: center;
@@ -221,16 +159,12 @@ line-height: 36px;
 text-transform: uppercase;
 }
 .interested__description{
-    width: 592px;
-    text-align: center;
-color:  #333;
+    color:  #333;
 font-size: 22px;
 font-weight: 400;
 line-height: 26px;
 }
-.interested__link{
-     text-align: center;
-}
+
 .btn-bruwn{
     background-color: #756157;
     color: white;
@@ -266,15 +200,6 @@ line-height: 26px;
 background: #82B3D3;
     color: #FFFFFF;
 }
-.footer-contener{
-    display: flex;
-    width: 1060px;
-    margin: 0 auto;
-    justify-content: space-between;
-}
-.footer__list{
-width:142px;
-}
 .address_phone{
     color: #000;
 text-align: center;
@@ -284,10 +209,6 @@ font-weight: 400;
 line-height: 40px;
 text-transform: uppercase;
 text-decoration: none;
- width: 720px;
-}
-.footer__logo-html{
-    width: 115px;
 }
 /*каталог*/
 .main__header{
