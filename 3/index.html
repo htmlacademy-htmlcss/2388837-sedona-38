@@ -11,34 +11,39 @@
 <body>
     <div class="body-contener">
         <header class="header">
-            <a href="#" class="header__link">
-                <img src="imges/logo-sedon.svg" alt="Логотип седон" width="140" height="70" class="header__link-logo">
-            </a>
-            <nav class="header__navigarion">
-                <ul class="header__navigarion-list">
-                    <li class="header__navigarion-item">
-                        <a class="header__navigarion-link header__navigarion-active">Главная </a>
+            <div class="header-container">
+                <a href="#" class="header__link">
+                    <img src="imges/logo-sedon.svg" alt="Логотип седон" width="140" height="70" class="header__link-logo">
+                </a>
+                <nav class="header__navigarion">
+                    <ul class="header__navigarion-list">
+                        <li class="header__navigarion-item">
+                            <a class="header__navigarion-link header__navigarion-active">Главная </a>
+                        </li>
+                        <li class="header__navigarion-item">
+                            <a href="#" class="header__navigarion-link">О Седоне </a>
+                        </li>
+                        <li class="header__navigarion-item">
+                            <a href="catalog.html" class="header__navigarion-link">Гостиницы</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="header__list">
+                    <li class="header__item ">
+                        <a href="#" class="item_link-search ">
+                            <span class="visually-hidden">Поиск</span>
+                        </a>
                     </li>
-                    <li class="header__navigarion-item">
-                        <a href="#" class="header__navigarion-link">О Седоне </a>
+                    <li class="header__item ">
+                        <a href="#" class="item_link-like">
+                            <span class="visually-hidden">Избранное</span>
+                        </a>
                     </li>
-                    <li class="header__navigarion-item">
-                        <a href="catalog.html" class="header__navigarion-link">Гостиницы</a>
+                    <li class="header__item">
+                        <a class="header__item-link btn-bruwn" href="#">Хочу сюда</a>
                     </li>
                 </ul>
-            </nav>
-            <ul class="header__list">
-                <li class="header__item">
-                    <a href="#" class="item_link-lupa">
-                        <span class="visually-hidden">Поиск</span>
-                    </a>
-                </li>
-                <li class="header__item">
-                    <a href="#" class="item_link-like">
-                        <span class="visually-hidden">Избранное</span>
-                    </a>
-                </li>
-            </ul>
+            </div>
         </header>
         <main class="main-index">
             <section class="welcome">
@@ -47,13 +52,19 @@
                 </h1>
                 <img src="imges/welcome-sedone.svg" alt="Добро пожаловать в Седон" width="458" height="352" class="welcome__image">
             </section>
+            <section class="sedon-city">
+                <div class="sedon-city-contener">
+
+                    <h2 class="sedon-city__title">
+                        Седона — небольшой городок в Аризоне,<br>заслуживающий большего!
+                    </h2>
+                    <p class="sedon-city__description">
+                        Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
+                    </p>
+                </div>
+            </section>
             <section class="advantages">
-                <h2 class="advantages__title">
-                    Седона — небольшой городок в Аризоне,заслуживающий большего!
-                </h2>
-                <p class="advantages__description">
-                    Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
-                </p>
+                <h2 class="visually-hidden">Список преимуществ </h2>
                 <ul class="advantages__list">
                     <li class="advantages__list-item advantages__list-blue">
                         <h3 class="advantages__list-title">
@@ -63,7 +74,7 @@
                             Седона — не аттракцион для туристов, там течёт своя жизнь
                         </p>
                     </li>
-                    <li class="advantages__list-item">
+                    <li class="advantages__list-item ">
                         <img src="imges/hostel-usa.jpg" alt="Вид из отеля" width="800" height="385" class="advantages__list-image">
                     </li>
                     <li class="advantages__list-item advantages__list-silver">
@@ -103,13 +114,15 @@
                     </li>
                 </ul>
             </section>
-            <section class="servis">
-                <h2 class="servis__title">
-                    Приезжайте в Седону отдохнуть в комфорте и уюте!
+            <section class="come-sedon">
+                <h2 class="come-sedon__title">
+                    Приезжайте в Седону отдохнуть<br>в комфорте и уюте!
                 </h2>
-                <p class="servis__description">
+                <p class="come-sedon__description">
                     Опытный персонал и качественное обслуживание!
                 </p>
+            </section>
+            <section class="servis">
                 <ul class="servis__list">
                     <li class="servis__list-item advantages__list-darcksilver">
                         <span class="item__image-hostel"></span>
@@ -139,28 +152,30 @@
                     Заинтересовались?
                 </h2>
                 <p class="interested__description">
-                    Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне
+                    Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне
                 </p>
-                <a href="#" class="interested__link btn-bruwn">
+                <div class="interested__link-contener">
+                    <a href="#" class="interested__link btn-bruwn">
                     ПОИСК ГОСТИНИЦЫ В седоне
                 </a>
+                </div>
             </section>
             <section class="form">
-                <div class="">
+
                     <h2 class="form__title">
                         Подпишитесь на рассылку
                     </h2>
                     <p class="form__description">
                         Только полезная информация и никакого спама, честное бойскаутское!
                     </p>
-                    <form action="https://echo.htmlacademy.ru/" method="post" class="form__form">
+                    <form action="https://echo.htmlacademy.ru/" method="post" class="form__form" >
                         <input type="email" name="email" placeholder="Ваш e-mail" class="form__form-email">
                         <button type="submit" class="form__form-button btn-blue">Подписаться</button>
                     </form>
-                </div>
             </section>
         </main>
         <footer class="footer">
+           <div class="footer-contener">
             <ul class="footer__list">
                 <li class="footer__list-item">
                     <a href="" class="footer__list-link">
@@ -181,7 +196,10 @@
             <address class="address">
                 <a href="tel:+78128121212" class="address_phone">+7 (812) 812-12-12</a>
             </address>
-            <img src="imges/logo-htmlacademy.svg" alt="Логотип HTMLacademy" width="115" height="32" class="footer__logo-html">
+            <div class="footer__logo-html-contener">
+                <img src="imges/logo-htmlacademy.svg" alt="Логотип HTMLacademy" width="115" height="32" class="footer__logo-html">
+            </div>
+            </div>
         </footer>
     </div>
 </body>
