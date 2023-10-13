@@ -12,6 +12,9 @@
     font-style: normal;
     font-display: swap;
 }
+*{
+    box-sizing: border-box;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -31,6 +34,7 @@ body{
     color: #000;
     background-color: #f2f2f2;
     font-weight: 400px;
+    margin:0;
 }
 ul{
     list-style: none;
@@ -80,17 +84,21 @@ button, input, select{
 .advantages__list, .servis__list{
     text-align: center;
 }
-.advantages__title{
+.sedon-city__title{
 font-size: 30px;
 font-weight: 700;
 line-height: 36px;
 text-transform: uppercase;
+text-align: center;
+    margin: 0;
+    margin-bottom: 25px;
 }
-.advantages__description{
+.sedon-city__description{
 color:  #333;
 font-size: 22px;
 font-weight: 400;
 line-height: 26px;
+text-align: center;
 }
 .item__image-hostel{
     background-image: url(../imges/advantages/advantages-hostel.svg);
@@ -134,19 +142,26 @@ background: rgba(131, 179, 211, 0.12);
 .advantages__list-darcksilver{
     background:  rgba(131, 179, 211, 0.20);
 }
-.servis__title{
-text-align: center;
+.come-sedon__title{
 font-size: 30px;
 font-weight: 700;
 line-height: 36px;
 text-transform: uppercase;
-}
-.servis__description{
-    color: #333;
 text-align: center;
+margin: 0 auto;
+margin-bottom: 20px;
+    width: 650px;
+    padding-top:69px;
+}
+.come-sedon__description{
+    color: #333;
 font-size: 22px;
 font-weight: 400;
 line-height: 26px;
+text-align: center;
+    margin: 0 auto;
+    width: 651px;
+     padding-bottom:69px;
 }
 .interested{
     text-align: center;
@@ -157,14 +172,22 @@ font-size: 30px;
 font-weight: 700;
 line-height: 36px;
 text-transform: uppercase;
+margin:0;
+margin-bottom: 20px;
+padding-top: 96px;
 }
 .interested__description{
     color:  #333;
 font-size: 22px;
 font-weight: 400;
 line-height: 26px;
+text-align: center;
+margin: 0;
+margin-bottom: 54px;
 }
-
+.interested__link-contener{
+    margin-bottom: 96px;
+}
 .btn-bruwn{
     background-color: #756157;
     color: white;
@@ -182,18 +205,22 @@ border-radius: 4px;
     text-align: center;
      color: #FFF;
     background-repeat: no-repeat;
-    padding: 96px 258px 82px 258px;
 }
 .form__title{
 font-size: 30px;
 font-weight: 700;
 line-height: 36px;
 text-transform: uppercase;
+margin: 0;
+margin-bottom: 20px;
+padding-top: 96px;
 }
 .form__description{
 font-size: 22px;
 font-weight: 400;
 line-height: 26px;
+margin: 0;
+    margin-bottom:54px;
 }
 .btn-blue{
     border-radius: 4px;
@@ -354,4 +381,121 @@ background: var(--forms-elements-2, #F2F2F2);
     background-color: white;
 
 }
+/*Сетка header для двух страниц*/
+.header-container{
+width: 1060px;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+    align-items: center;
+}
+.header__link{
+margin-right:28px;
+}
+.header__navigarion{
+    width: 339px;
+    margin-right:285px;
+}
+.header__navigarion-list{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+.header__list{
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+.header__list .header__item:nth-child(1){
+    width: 44px;
+}
+.header__list .header__item:nth-child(2){
+    width: 44px;
+}
+.header__list .header__item:last-child{
+    width: 180px;
+}
+/*сетка main index*/
+.welcome{
+    height: 485px;
+}
+.sedon-city-contener{
+padding: 69px 274px 69px 274px;
+}
+.advantages__list{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.advantages__list-blue{
+    width:400px;
+    height: 385px;
+}
+.advantages__list-silver{
+    width: 400px;
+    height: 385px;
+}
+.advantages__list-darcksilver{
+    width: 400px;
+    height: 385px;
+}
+.servis__list{
+margin: 0;
+padding: 0;
+display: flex;
+flex-wrap: wrap;
+}
+.form__form{
+padding-bottom: 104px;
+}
+/*Футер сетка две страницы*/
+.footer-contener{
+    width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__list{
+    padding: 0;
+    margin: 0;
+    width:142px;
+    display: flex;
+    align-items: center;
+    margin-right:41px;
+}
+.footer__list .footer__list-item{
+    width:47px;
+    margin: 0 auto;
+    text-align: center;
+}
+.address{
+width:720px;
+text-align: center;
+    margin: 0 auto;
+}
+.footer__logo-html-contener{
+margin: 0 auto;
+}
 
+/*
+сетка каталог маин
+fieldset{
+    border: none;
+}
+.main-catalo-contener{
+    width:1060px;
+    margin: 0 auto;
+}
+.heder__title{
+width:495px;
+    margin: 0;
+    margin-bottom:8px;
+    padding-top: 35px;
+}
+.bread{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 114px;}
+*/

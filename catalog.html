@@ -10,104 +10,108 @@
 <body>
     <div class="body-contener">
         <header class="header">
-            <a href="#" class="header__link">
-                <img src="imges/logo-sedon.svg" alt="Логотип седон" width="140" height="70" class="header__link-logo">
-            </a>
-            <nav class="header__navigarion">
-                <ul class="header__navigarion-list">
-                    <li class="header__navigarion-item">
-                        <a href="index.html" class="header__navigarion-link header__navigarion-active">Главная </a>
+            <div class="header-container">
+                <a href="#" class="header__link">
+                    <img src="imges/logo-sedon.svg" alt="Логотип седон" width="140" height="70" class="header__link-logo">
+                </a>
+                <nav class="header__navigarion">
+                    <ul class="header__navigarion-list">
+                        <li class="header__navigarion-item">
+                            <a href="index.html" class="header__navigarion-link header__navigarion-active">Главная </a>
+                        </li>
+                        <li class="header__navigarion-item">
+                            <a href="#" class="header__navigarion-link">О Седоне </a>
+                        </li>
+                        <li class="header__navigarion-item">
+                            <a class="header__navigarion-link">Гостиницы</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="header__list">
+                    <li class="header__item ">
+                        <a href="#" class="item_link-search">
+                            <span class="visually-hidden">Поиск</span>
+                        </a>
                     </li>
-                    <li class="header__navigarion-item">
-                        <a href="#" class="header__navigarion-link">О Седоне </a>
+                    <li class="header__item ">
+                        <a href="#" class="item_link-like">
+                            <span class="visually-hidden">Избранное</span>
+                        </a>
                     </li>
-                    <li class="header__navigarion-item">
-                        <a class="header__navigarion-link">Гостиницы</a>
+                    <li class="header__item">
+                        <a class="header__item-link btn-bruwn" href="#">Хочу сюда</a>
                     </li>
                 </ul>
-            </nav>
-            <ul class="header__list">
-                <li class="header__item">
-                    <a href="#" class="item_link-search">
-                        <span class="visually-hidden">Поиск</span>
-                    </a>
-                </li>
-                <li class="header__item">
-                    <a href="#" class="item_link-like">
-                        <span class="visually-hidden">Избранное</span>
-                    </a>
-                </li>
-                                <li class="header__item">
-                    <a  class="header__item-link btn-bruwn" href="#">Хочу сюда</a>
-                </li>
-            </ul>
+            </div>
         </header>
         <main class="main-catalog">
             <section class="main__header">
-                <h1 class="heder__title">
-                    Гостиницы Седоны
-                </h1>
-                <ul class="bread">
-                    <li class="bread__item">
-                        <a href="index.html" class="bread__item-link">
-                            <span class="visually-hidden">На главную</span>
-                        </a>
-                    </li>
-                    <li class="bread__item">
-                        <span class="bread__item-arrow"></span>
-                    </li>
-                    <li class="bread__item-hostel">Гостиницы</li>
-                </ul>
-                <form action="https://echo.htmlacademy.ru/" method="post">
-                    <fieldset class="calculator__fieldset">
-                        <legend class="fieldset__legend">Инфраструктура</legend>
-                        <ul class="fieldset__list">
-                            <li class="fieldset__item">
-                                <input type="checkbox" class="fieldset__item-input" id="pool" name="Бассейн" checked>
-                                <label for="pool" class="fieldset__item-lable">Бассейн</label>
-                            </li>
-                            <li class="fieldset__item">
-                                <input type="checkbox" class="fieldset__item-input" id="parking" name="Парковка" checked>
-                                <label for="parking" class="fieldset__item-lable">Парковка</label>
-                            </li>
-                            <li class="fieldset__item">
-                                <input type="checkbox" class="fieldset__item-input" name="Wi-Fi" id="wi-fi">
-                                <label for="wi-fi" class="fieldset__item-lable">Wi-Fi</label>
-                            </li>
-                        </ul>
-                    </fieldset>
-                    <fieldset class="calculator__fieldset">
-                        <legend class="fieldset__legend">Тип жилья:</legend>
-                        <ul class="fieldset__list">
-                            <li class="fieldset__item">
-                                <input type="radio" class="fieldset__item-input" id="hostel" name="radio" checked value="Гостиницы">
-                                <label for="hostel" class="fieldset__item-lable">Гостиница</label>
-                            </li>
-                            <li class="fieldset__item">
-                                <input type="radio" class="fieldset__item-input" id="motel" name="radio" value="Мотель">
-                                <label for="motel" class="fieldset__item-lable">Мотель</label>
-                            </li>
-                            <li class="fieldset__item">
-                                <input type="radio" class="fieldset__item-input" name="radio" id="appartaments" value="Аппартаменты">
-                                <label for="appartaments" class="fieldset__item-lable">Апартаменты</label>
-                            </li>
-                        </ul>
-                    </fieldset>
-                    <fieldset class="fieldset-range">
-                        <legend class="fieldset__legend">
-                            Стоимость, ₽:
-                        </legend>
-                        <p class="fieldset-range__paragraph">
-                            <label for="Ot">От</label>
-                            <input type="text" id="Ot" value="0" class="fieldset-range__paragraph-input">
-                            <label for="Do">До</label>
-                            <input type="text" id="Do" value="9000" class="fieldset-range__paragraph-input">
-                        </p>
-                        <input type="range" class="fieldset-range__range">
-                    </fieldset>
-                    <button type="submit" class="calculator-button btn-blue">Применить</button>
-                    <button type="submit" class="calculator-button">Сбросить</button>
-                </form>
+                <div class="main-catalo-contener">
+                    <h1 class="heder__title">
+                        Гостиницы Седоны
+                    </h1>
+                    <ul class="bread">
+                        <li class="bread__item">
+                            <a href="index.html" class="bread__item-link">
+                                <span class="visually-hidden">На главную</span>
+                            </a>
+                        </li>
+                        <li class="bread__item">
+                            <span class="bread__item-arrow"></span>
+                        </li>
+                        <li class="bread__item-hostel">Гостиницы</li>
+                    </ul>
+                    <form action="https://echo.htmlacademy.ru/" method="post">
+                        <fieldset class="calculator__fieldset">
+                            <legend class="fieldset__legend">Инфраструктура</legend>
+                            <ul class="fieldset__list">
+                                <li class="fieldset__item">
+                                    <input type="checkbox" class="fieldset__item-input" id="pool" name="Бассейн" checked>
+                                    <label for="pool" class="fieldset__item-lable">Бассейн</label>
+                                </li>
+                                <li class="fieldset__item">
+                                    <input type="checkbox" class="fieldset__item-input" id="parking" name="Парковка" checked>
+                                    <label for="parking" class="fieldset__item-lable">Парковка</label>
+                                </li>
+                                <li class="fieldset__item">
+                                    <input type="checkbox" class="fieldset__item-input" name="Wi-Fi" id="wi-fi">
+                                    <label for="wi-fi" class="fieldset__item-lable">Wi-Fi</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <fieldset class="calculator__fieldset">
+                            <legend class="fieldset__legend">Тип жилья:</legend>
+                            <ul class="fieldset__list">
+                                <li class="fieldset__item">
+                                    <input type="radio" class="fieldset__item-input" id="hostel" name="radio" checked value="Гостиницы">
+                                    <label for="hostel" class="fieldset__item-lable">Гостиница</label>
+                                </li>
+                                <li class="fieldset__item">
+                                    <input type="radio" class="fieldset__item-input" id="motel" name="radio" value="Мотель">
+                                    <label for="motel" class="fieldset__item-lable">Мотель</label>
+                                </li>
+                                <li class="fieldset__item">
+                                    <input type="radio" class="fieldset__item-input" name="radio" id="appartaments" value="Аппартаменты">
+                                    <label for="appartaments" class="fieldset__item-lable">Апартаменты</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <fieldset class="fieldset-range">
+                            <legend class="fieldset__legend">
+                                Стоимость, ₽:
+                            </legend>
+                            <p class="fieldset-range__paragraph">
+                                <label for="Ot">От</label>
+                                <input type="text" id="Ot" value="0" class="fieldset-range__paragraph-input">
+                                <label for="Do">До</label>
+                                <input type="text" id="Do" value="9000" class="fieldset-range__paragraph-input">
+                            </p>
+                            <input type="range" class="fieldset-range__range">
+                        </fieldset>
+                        <button type="submit" class="calculator-button btn-blue">Применить</button>
+                        <button type="submit" class="calculator-button">Сбросить</button>
+                    </form>
+                </div>
             </section>
             <section class="Forma">
                 <h2 class="visually-hidden">Список отелей</h2>
