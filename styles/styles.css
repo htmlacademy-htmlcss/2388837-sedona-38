@@ -15,6 +15,9 @@
 *{
     box-sizing: border-box;
 }
+html{
+    height: 100%
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -35,6 +38,11 @@ body{
     background-color: #f2f2f2;
     font-weight: 400px;
     margin:0;
+}
+.body-contener{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1
 }
 ul{
     list-style: none;
@@ -284,9 +292,6 @@ font-size: 18px;
 font-weight: 400;
 line-height: 23px; /* 127.778% */
 }
-.card-list{
-    display: flex;
-}
 .card-items{
 font-size: 30px;
 font-weight: 700;
@@ -362,18 +367,18 @@ background:  #F2F2F2;
 }
 .pagination__item-link{
     color: var(--texts-background-deafault, #FFF);
-text-align: center;
 font-size: 20px;
 font-weight: 700;
 line-height: 36px;
 text-transform: uppercase;
-    border-radius: 4px;
-background: var(--buttons-second, #82B3D3);
     text-decoration: none;
+    width: 100%;
+    height: 100% ;
 }
-.pagination__active{
-    color: var(--texts-texts-basic, #000);
-background: var(--forms-elements-2, #F2F2F2);
+.pagination__item-link-active{
+background: #F2F2F2;
+color: black;
+border-radius: 4px;
 }
 .form-catalog{
     background-image: none;
@@ -478,8 +483,7 @@ text-align: center;
 margin: 0 auto;
 }
 
-/*
-сетка каталог маин
+/*сетка каталог маин*/
 fieldset{
     border: none;
 }
@@ -497,5 +501,101 @@ width:495px;
     padding: 0;
     margin: 0;
     display: flex;
-    width: 114px;}
-*/
+    width: 114px;
+    margin-bottom: 40px;
+}
+.main__header-form{
+margin: 0;
+padding: 0;
+display: flex;
+}
+.calculator__fieldset-box{
+width: 150px;
+margin: 0;
+margin-right:70px;
+padding: 0;
+}
+.fieldset__list{
+    padding: 0;
+    margin: 0;
+}
+.calculator__fieldset-checkbox{
+    margin-right: 140px;
+}
+.fieldset-range{
+    width:288px;
+height: 160px;
+    margin: 0;
+    padding: 0;
+    margin-right: 70px;
+}
+.contener__calculator-button{
+width:358PX;
+height:104px;
+display: flex;
+flex-direction: column;
+margin: 0 auto;
+    justify-content: space-between;
+}
+.contener__calculator-button:first-child{
+    margin-bottom:40px;
+}
+.calculator-button{
+width:191px;
+    height:36px;
+margin: 0 auto;
+}
+.forma-contener{
+    width: 1060px;
+    margin: 0 auto;
+    padding-top:56px;
+    padding-bottom: 46px;
+    height: 49px;
+}
+.card-list{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.button-card-list{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    column-gap: 8px;
+}
+.cards-list{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    justify-content:space-between;
+    align-items: center;
+}
+.cards-contener{
+    width: 1060px;
+    margin: 0 auto;}
+.cards-list .cards__item{
+    width: 340px;
+    padding: 20px;
+}
+.pagination{
+    margin: 0;
+    padding: 0;
+display: flex;
+    column-gap:8px;
+    align-items: center;
+}
+.pagination__item{
+    background: var(--buttons-second, #82B3D3);
+width: 60px;
+height: 60px;
+border-radius: 4px;
+}
+.pagination__item-link {
+    text-decoration: none;
+    padding: 10px;
+    display: flex;
+    align-items: center; /* Выравнивание по центру по вертикали */
+    justify-content: center; /* Выравнивание по центру по горизонтали */
+}
