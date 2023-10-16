@@ -36,13 +36,21 @@ body{
     line-height: 21px;
     color: #000;
     background-color: #f2f2f2;
-    font-weight: 400px;
+    font-weight: 400;
     margin:0;
+    height: 100%;
 }
 .body-contener{
     display: flex;
     flex-direction: column;
-    flex-grow: 1
+    width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    min-height: 100%;
+}
+main{
+        flex-grow: 1;
+
 }
 ul{
     list-style: none;
@@ -50,13 +58,15 @@ ul{
 button, input, select{
     font-family: inherit;
 }
-.body-contener{
-    width: 1200px;
-    margin: 0 auto;
-    background-color: white;
+.header__navigarion{
+    margin-right: 285px;
 }
 .header__navigarion,.header__list{
     text-align: center;
+}
+.header__list{
+    margin: 0;
+    padding: 0;
 }
 .header__navigarion-link{
     line-height: 24px;
@@ -65,6 +75,11 @@ button, input, select{
     font-size: 20px;
     text-decoration: none;
     text-transform: capitalize;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .item_link-search{
     background-image: url(../imges/lupa.svg);
@@ -129,26 +144,32 @@ text-align: center;
     height: 76px;
     display: inline-block;
 }
+
 .advantages__list-title, .servis__list-title{
 font-size: 24px;
 font-weight: 700;
 line-height: 28px;
 text-transform: uppercase;
+margin: 0;
 }
 .advantages__list-description, .servis__list-description{
 font-size: 18px;
 font-weight: 400;
 line-height: 21px;
+    margin:0;
 }
 .advantages__list-blue{
     background-color: #82B3D3;
     color: white;
+    padding: 102px 85px;
 }
 .advantages__list-silver{
 background: rgba(131, 179, 211, 0.12);
+    padding: 102px 85px;
 }
 .advantages__list-darcksilver{
     background:  rgba(131, 179, 211, 0.20);
+    padding: 102px 85px;
 }
 .come-sedon__title{
 font-size: 30px;
@@ -173,7 +194,7 @@ text-align: center;
 }
 .interested{
     text-align: center;
-
+    margin-bottom: 96px;
 }
 .interested__title{
 font-size: 30px;
@@ -193,9 +214,7 @@ text-align: center;
 margin: 0;
 margin-bottom: 54px;
 }
-.interested__link-contener{
-    margin-bottom: 96px;
-}
+
 .btn-bruwn{
     background-color: #756157;
     color: white;
@@ -208,7 +227,7 @@ border-radius: 4px;
 }
 .form{
     background-image: url(../imges/form-back.jpg);
-    background-size: 100% auto;
+    background-size:cover;
     background-color: aliceblue;
     text-align: center;
      color: #FFF;
@@ -221,7 +240,6 @@ line-height: 36px;
 text-transform: uppercase;
 margin: 0;
 margin-bottom: 20px;
-padding-top: 96px;
 }
 .form__description{
 font-size: 22px;
@@ -248,7 +266,7 @@ text-decoration: none;
 /*каталог*/
 .main__header{
     background-color: aliceblue;
-    background-image: url(../imges/catalog-back.jpg);
+    background-image: url(../imges/catalog-back.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -391,20 +409,25 @@ border-radius: 4px;
 width: 1060px;
 margin: 0 auto;
 display: flex;
-justify-content: space-between;
-    align-items: center;
+align-items: center;
+height: 64px;
 }
 .header__link{
-margin-right:28px;
+margin-right:30px;
+    position: relative;
 }
 .header__navigarion{
-    width: 339px;
-    margin-right:285px;
+    width:339px;
 }
 .header__navigarion-list{
     display: flex;
-    justify-content: space-between;
+    margin: 0;
     padding: 0;
+    justify-content: space-between;
+}
+.header__navigarion-item{
+    width:100px;
+    height: 64px;
 }
 .header__list{
     display: flex;
@@ -419,6 +442,9 @@ margin-right:28px;
 }
 .header__list .header__item:last-child{
     width: 180px;
+}
+.form{
+    padding: 96px 258px 104px
 }
 /*сетка main index*/
 .welcome{
@@ -451,9 +477,7 @@ padding: 0;
 display: flex;
 flex-wrap: wrap;
 }
-.form__form{
-padding-bottom: 104px;
-}
+
 /*Футер сетка две страницы*/
 .footer-contener{
     width: 1060px;
@@ -467,15 +491,23 @@ padding-bottom: 104px;
     width:142px;
     display: flex;
     align-items: center;
-    margin-right:41px;
 }
 .footer__list .footer__list-item{
     width:47px;
+    height: 40px;
     margin: 0 auto;
     text-align: center;
 }
+.footer__list-link{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .address{
-width:720px;
+    flex-grow: 1;
 text-align: center;
     margin: 0 auto;
 }
@@ -487,15 +519,14 @@ margin: 0 auto;
 fieldset{
     border: none;
 }
-.main-catalo-contener{
+.main-catalog-contener{
     width:1060px;
     margin: 0 auto;
+    padding: 35px 0 70px;
 }
 .heder__title{
-width:495px;
     margin: 0;
     margin-bottom:8px;
-    padding-top: 35px;
 }
 .bread{
     padding: 0;
@@ -510,7 +541,6 @@ padding: 0;
 display: flex;
 }
 .calculator__fieldset-box{
-width: 150px;
 margin: 0;
 margin-right:70px;
 padding: 0;
@@ -519,38 +549,36 @@ padding: 0;
     padding: 0;
     margin: 0;
 }
+.fieldset-range__paragraph{
+    margin: 0;
+}
 .calculator__fieldset-checkbox{
     margin-right: 140px;
 }
 .fieldset-range{
     width:288px;
-height: 160px;
     margin: 0;
     padding: 0;
     margin-right: 70px;
 }
 .contener__calculator-button{
-width:358PX;
 height:104px;
 display: flex;
 flex-direction: column;
-margin: 0 auto;
-    justify-content: space-between;
+justify-content: space-between;
 }
 .contener__calculator-button:first-child{
     margin-bottom:40px;
 }
 .calculator-button{
 width:191px;
-    height:36px;
-margin: 0 auto;
+height:36px;
 }
 .forma-contener{
     width: 1060px;
     margin: 0 auto;
-    padding-top:56px;
-    padding-bottom: 46px;
-    height: 49px;
+    padding-top:50px;
+    margin-bottom: 40px;
 }
 .card-list{
     padding: 0;
@@ -570,14 +598,34 @@ margin: 0 auto;
     padding: 0;
     margin: 0;
     justify-content:space-between;
-    align-items: center;
+    padding-bottom: 40px;
+    border-bottom: 1px solid black;
+    margin-bottom: 40px;
 }
 .cards-contener{
     width: 1060px;
-    margin: 0 auto;}
+    margin: 0 auto;
+}
 .cards-list .cards__item{
     width: 340px;
     padding: 20px;
+    border: 1px solid black;
+}
+.cards__item-title {
+    margin: 16px 0 16px;;
+}
+.contener-item-button{
+    margin-bottom: 16px;
+}
+.star-list{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    column-gap: 6px;
+}
+.cards__item-description{
+    margin: 0;
+    margin-bottom: 16px;
 }
 .pagination{
     margin: 0;
