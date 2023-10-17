@@ -58,9 +58,6 @@ ul{
 button, input, select{
     font-family: inherit;
 }
-.header__navigarion{
-    margin-right: 285px;
-}
 .header__navigarion,.header__list{
     text-align: center;
 }
@@ -75,27 +72,23 @@ button, input, select{
     font-size: 20px;
     text-decoration: none;
     text-transform: capitalize;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 20px 16px;
 }
 .item_link-search{
     background-image: url(../imges/lupa.svg);
     background-repeat: no-repeat;
      display: inline-block;
     background-position: center;
-    width: 20px;
-    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
 }
 .item_link-like{
     background-image: url(../imges/like.svg);
     background-repeat: no-repeat;
      display: inline-block;
     background-position: center;
-    width: 20px;
-    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
 }
 .welcome{
     background-image: url(../imges/konvert.jpg);
@@ -122,6 +115,7 @@ font-size: 22px;
 font-weight: 400;
 line-height: 26px;
 text-align: center;
+    margin: 0;
 }
 .item__image-hostel{
     background-image: url(../imges/advantages/advantages-hostel.svg);
@@ -145,18 +139,20 @@ text-align: center;
     display: inline-block;
 }
 
-.advantages__list-title, .servis__list-title{
+.advantages__list-title{
 font-size: 24px;
 font-weight: 700;
 line-height: 28px;
 text-transform: uppercase;
 margin: 0;
+margin-bottom:62px;
 }
 .advantages__list-description, .servis__list-description{
 font-size: 18px;
 font-weight: 400;
 line-height: 21px;
-    margin:0;
+margin:0;
+margin-bottom:102px;
 }
 .advantages__list-blue{
     background-color: #82B3D3;
@@ -171,30 +167,28 @@ background: rgba(131, 179, 211, 0.12);
     background:  rgba(131, 179, 211, 0.20);
     padding: 102px 85px;
 }
+.come-sedon{
+    padding: 64px 0;
+}
 .come-sedon__title{
 font-size: 30px;
 font-weight: 700;
 line-height: 36px;
 text-transform: uppercase;
 text-align: center;
-margin: 0 auto;
+margin: 0;
 margin-bottom: 20px;
-    width: 650px;
-    padding-top:69px;
 }
 .come-sedon__description{
     color: #333;
 font-size: 22px;
 font-weight: 400;
 line-height: 26px;
-text-align: center;
-    margin: 0 auto;
-    width: 651px;
-     padding-bottom:69px;
+    margin:0;
+    text-align: center;
 }
 .interested{
-    text-align: center;
-    margin-bottom: 96px;
+    padding: 96px 0;
 }
 .interested__title{
 font-size: 30px;
@@ -202,8 +196,8 @@ font-weight: 700;
 line-height: 36px;
 text-transform: uppercase;
 margin:0;
-margin-bottom: 20px;
-padding-top: 96px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 .interested__description{
     color:  #333;
@@ -212,9 +206,11 @@ font-weight: 400;
 line-height: 26px;
 text-align: center;
 margin: 0;
-margin-bottom: 54px;
+    margin-bottom:54px;
 }
-
+.interested__link-contener{
+    text-align: center;
+}
 .btn-bruwn{
     background-color: #756157;
     color: white;
@@ -232,6 +228,7 @@ border-radius: 4px;
     text-align: center;
      color: #FFF;
     background-repeat: no-repeat;
+    padding: 96px 0 104px;
 }
 .form__title{
 font-size: 30px;
@@ -246,7 +243,7 @@ font-size: 22px;
 font-weight: 400;
 line-height: 26px;
 margin: 0;
-    margin-bottom:54px;
+margin-bottom:54px;
 }
 .btn-blue{
     border-radius: 4px;
@@ -288,8 +285,8 @@ line-height: 78px;
     background-image: url(../imges/bread-catalog-heder/bread-item-strelka.svg);
     background-position: center;
     background-repeat: no-repeat;
-    width: 20px;
-    height: 20px;
+    width: 8px;
+    height: 100%;
     display: inline-block;
 }
 .bread__item-hostel{
@@ -303,6 +300,7 @@ font-size: 20px;
 font-weight: 700;
 line-height: 24px;
 text-transform: capitalize;
+margin-bottom: 32px;
 }
 .fieldset__item-lable{
     color: #FFF;
@@ -416,40 +414,36 @@ height: 64px;
 margin-right:30px;
     position: relative;
 }
-.header__navigarion{
-    width:339px;
-}
+
 .header__navigarion-list{
     display: flex;
     margin: 0;
     padding: 0;
-    justify-content: space-between;
+     width:507px;
+    flex-wrap: wrap;
 }
-.header__navigarion-item{
-    width:100px;
-    height: 64px;
-}
+
 .header__list{
     display: flex;
     align-items: center;
     padding: 0;
+    width: 268px;
+    justify-content: flex-end;
+    margin-left: auto;
+    flex-wrap: wrap;
 }
-.header__list .header__item:nth-child(1){
-    width: 44px;
+.header__item:first-child{
+    margin-right: 12px;
 }
-.header__list .header__item:nth-child(2){
-    width: 44px;
+.header__item:nth-child(2){
+    margin-right:20px;
 }
-.header__list .header__item:last-child{
-    width: 180px;
-}
-.form{
-    padding: 96px 258px 104px
+.item_link{
+    display: block;
+    padding: 22px 12px;
 }
 /*сетка main index*/
-.welcome{
-    height: 485px;
-}
+
 .sedon-city-contener{
 padding: 69px 274px 69px 274px;
 }
@@ -477,29 +471,38 @@ padding: 0;
 display: flex;
 flex-wrap: wrap;
 }
-
+.servis__list-item span{
+    margin-bottom:30px;
+}
+.servis__list-title{
+    margin: 0;
+    margin-bottom:30px;
+}
+.servis__list-description{
+    margin: 0;
+}
 /*Футер сетка две страницы*/
 .footer-contener{
     width: 1060px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    padding: 40px 0 30px;
 }
 .footer__list{
     padding: 0;
     margin: 0;
-    width:142px;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    width: 189px;
 }
 .footer__list .footer__list-item{
     width:47px;
     height: 40px;
-    margin: 0 auto;
     text-align: center;
 }
 .footer__list-link{
-    display: inline-block;
     width: 100%;
     height: 100%;
     display: flex;
@@ -532,13 +535,19 @@ fieldset{
     padding: 0;
     margin: 0;
     display: flex;
-    width: 114px;
     margin-bottom: 40px;
+    }
+.bread li{
+    margin-right: 10px;
+}
+.bread li:last-child{
+    margin: 0;
 }
 .main__header-form{
 margin: 0;
 padding: 0;
 display: flex;
+    justify-content: space-between;
 }
 .calculator__fieldset-box{
 margin: 0;
@@ -549,17 +558,38 @@ padding: 0;
     padding: 0;
     margin: 0;
 }
-.fieldset-range__paragraph{
-    margin: 0;
+.fieldset__item{
+    margin-bottom: 16px;
+}
+.fieldset__item:last-child{
+    margin-bottom: 0;
+}
+.fieldset-range__paragraph-input{
+width: 143px;
+height: 48px;
+border-radius: 4px 0px 0px 4px;
+background: var(--basic-light, #F2F2F2);
+    padding: 0;
+}
+.fieldset-range__paragraph input:first-child {
+    margin-right: 2px;
 }
 .calculator__fieldset-checkbox{
     margin-right: 140px;
+}
+.fieldset-range__range{
+    margin: 0;
 }
 .fieldset-range{
     width:288px;
     margin: 0;
     padding: 0;
     margin-right: 70px;
+}
+.fieldset-range__paragraph{
+    margin: 0;
+    display: flex;
+    margin-bottom: 36px;
 }
 .contener__calculator-button{
 height:104px;
@@ -577,8 +607,7 @@ height:36px;
 .forma-contener{
     width: 1060px;
     margin: 0 auto;
-    padding-top:50px;
-    margin-bottom: 40px;
+    padding:50px 0 40px;
 }
 .card-list{
     padding: 0;
@@ -614,8 +643,9 @@ height:36px;
 .cards__item-title {
     margin: 16px 0 16px;;
 }
-.contener-item-button{
-    margin-bottom: 16px;
+.contener-reting{
+    display: flex;
+    justify-content: space-between;
 }
 .star-list{
     margin: 0;
@@ -623,9 +653,23 @@ height:36px;
     display: flex;
     column-gap: 6px;
 }
+.cards-rang{
+    margin: 0;
+}
 .cards__item-description{
     margin: 0;
     margin-bottom: 16px;
+}
+.list-button-cards{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+justify-content: space-between;
+    margin-bottom: 16px;
+}
+.cards__item-description b {
+  float: right;
 }
 .pagination{
     margin: 0;
