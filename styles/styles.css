@@ -94,8 +94,13 @@ button, input, select{
     background-image: url(../imges/konvert.jpg);
     background-size: 100% auto;
     background-repeat: no-repeat;
-    padding: 51px 371px 82px 371px;
+    padding: 51px  82px;
     background-color: aliceblue;
+}
+.welcome__image{
+display: block;
+margin-left: auto;
+margin-right: auto;
 }
 .advantages__list, .servis__list{
     text-align: center;
@@ -152,7 +157,6 @@ font-size: 18px;
 font-weight: 400;
 line-height: 21px;
 margin:0;
-margin-bottom:102px;
 }
 .advantages__list-blue{
     background-color: #82B3D3;
@@ -308,6 +312,12 @@ font-size: 18px;
 font-weight: 400;
 line-height: 23px; /* 127.778% */
 }
+.fieldset__item-input{
+    margin: 0;
+    margin-right: 16px;
+    width: 20px;
+   height: 20px;
+}
 .card-items{
 font-size: 30px;
 font-weight: 700;
@@ -340,10 +350,15 @@ border: 2px solid var(--icons-basic, #000);
     width: 48px;
     height: 48px;
 }
+.cards__item-image{
+    margin-bottom: 16px;
+}
 .cards__item-title {
 font-size: 24px;
 font-weight: 700;
-line-height: 28px; /* 116.667% */
+line-height: 28px;
+margin:0;
+margin-bottom: 16px;
 }
 .cards__item-description{
     color: var(--texts-second, #333);
@@ -382,7 +397,7 @@ border-radius: 4px;
 background:  #F2F2F2;
 }
 .pagination__item-link{
-    color: var(--texts-background-deafault, #FFF);
+    color:  #FFF;
 font-size: 20px;
 font-weight: 700;
 line-height: 36px;
@@ -391,16 +406,33 @@ text-transform: uppercase;
     width: 100%;
     height: 100% ;
 }
-.pagination__item-link-active{
-background: #F2F2F2;
-color: black;
-border-radius: 4px;
-}
+
 .form-catalog{
     background-image: none;
     color: var(--texts-texts-basic, #000);
     background-color: white;
 
+}
+.pagination__item{
+    background: var(--buttons-second, #82B3D3);
+min-width: 60px;
+min-height: 60px;
+border-radius: 4px;
+}
+.pagination__item-link {
+    text-decoration: none;
+    padding: 10px;
+    display: flex;
+    align-items: center; /* Выравнивание по центру по вертикали */
+    justify-content: center; /* Выравнивание по центру по горизонтали */
+}
+.pagination__item-active{
+background: #F2F2F2;
+color: black;
+border-radius: 4px;
+}
+.pagination__link-active{
+    color:black;
 }
 /*Сетка header для двух страниц*/
 .header-container{
@@ -455,15 +487,15 @@ padding: 69px 274px 69px 274px;
 }
 .advantages__list-blue{
     width:400px;
-    height: 385px;
+    min-height:385px;
 }
 .advantages__list-silver{
     width: 400px;
-    height: 385px;
+    min-height: 385px;
 }
 .advantages__list-darcksilver{
     width: 400px;
-    height: 385px;
+    min-height: 385px;
 }
 .servis__list{
 margin: 0;
@@ -568,7 +600,7 @@ padding: 0;
 width: 143px;
 height: 48px;
 border-radius: 4px 0px 0px 4px;
-background: var(--basic-light, #F2F2F2);
+background:  #F2F2F2 ;
     padding: 0;
 }
 .fieldset-range__paragraph input:first-child {
@@ -626,7 +658,7 @@ height:36px;
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
-    justify-content:space-between;
+    grid-gap: 20px;
     padding-bottom: 40px;
     border-bottom: 1px solid black;
     margin-bottom: 40px;
@@ -637,11 +669,12 @@ height:36px;
 }
 .cards-list .cards__item{
     width: 340px;
+    min-height: 438px;
     padding: 20px;
     border: 1px solid black;
 }
 .cards__item-title {
-    margin: 16px 0 16px;;
+    margin-bottom: 16px;
 }
 .contener-reting{
     display: flex;
@@ -678,16 +711,4 @@ display: flex;
     column-gap:8px;
     align-items: center;
 }
-.pagination__item{
-    background: var(--buttons-second, #82B3D3);
-width: 60px;
-height: 60px;
-border-radius: 4px;
-}
-.pagination__item-link {
-    text-decoration: none;
-    padding: 10px;
-    display: flex;
-    align-items: center; /* Выравнивание по центру по вертикали */
-    justify-content: center; /* Выравнивание по центру по горизонтали */
-}
+
