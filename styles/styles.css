@@ -97,6 +97,7 @@ button, input, select{
     background-repeat: no-repeat;
     padding: 51px  82px;
     background-color: aliceblue;
+    min-height: 485px;
 }
 .welcome__image{
 display: block;
@@ -238,7 +239,7 @@ text-decoration: none;
      color: #FFF;
     background-repeat: no-repeat;
     padding: 96px 298px 104px 258px;
-    min-height:4155px;
+    min-height:415px;
 }
 .form__title{
 font-size: 30px;
