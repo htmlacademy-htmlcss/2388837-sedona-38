@@ -43,7 +43,7 @@ body{
 .body-contener{
     display: flex;
     flex-direction: column;
-    width: 1200px;
+  width: 1200px;
     margin: 0 auto;
     background-color: white;
     min-height: 100%;
@@ -485,12 +485,53 @@ border-radius: 4px;
 .sedon-city-contener{
 padding: 69px 274px 69px 274px;
 }
+/*
 .advantages__list{
     margin: 0;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
 }
+*/
+.advantages__list{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-areas: "world usa usa"
+                        " smal butiful turist"
+                        "skali skali most"
+}
+.advantages__list-world{
+    grid-area: world;
+
+}
+.advantages__list-usa{
+
+    grid-area: usa;
+}
+.advantages__list-small{
+  grid-area: smal;
+}
+.advantages__list-butiful{
+    grid-area: butiful;
+}
+.advantages__list-turist{
+    grid-area: turist;
+}
+.advantages__list-skali{
+    grid-area: skali;
+}
+.advantages__list-most{
+    grid-area: most;
+}
+
+
+
+
+
+
+
 .advantages__list-blue{
     width:400px;
     min-height:385px;
