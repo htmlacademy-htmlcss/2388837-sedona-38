@@ -75,6 +75,22 @@ button, input, select{
     text-transform: capitalize;
     padding: 20px 16px;
 }
+.header__navigarion-active::before{
+    content: "";
+    width:68px;
+    height: 2px;
+    background: #756257;
+    position: absolute;
+    top: 62px;
+}
+.header__navigarion-active-hostel::before{
+    content: "";
+    width:93px;
+    height: 2px;
+    background: #756257;
+    position: absolute;
+    top: 62px;
+}
 .item_link-search{
     background-image: url(../imges/lupa.svg);
     background-repeat: no-repeat;
@@ -315,6 +331,12 @@ line-height: 40px;
 text-transform: uppercase;
 text-decoration: none;
 }
+.address_phone:hover{
+   color: var(--texts-hover, #756157);
+}
+.address_phone:active{
+   color: var(--texts-active, rgba(117, 97, 87, 0.30));
+}
 /*каталог*/
 .main__header{
     background-color: aliceblue;
@@ -375,6 +397,8 @@ font-weight: 700;
 line-height: 36px;
 text-transform: uppercase;
 margin-right: 200px;
+height: 48px;
+    width: 338px;
 }
 .card-item__select{
     padding: 14px 100px 14px 20px;
@@ -389,7 +413,14 @@ margin-right: 200px;
     background-repeat: no-repeat;
     background-position: 100px 21px;
     width: 292px;
+    height: 49px;
     background-position: 260px 21px;
+}
+.card-item__select:hover{
+    outline: 3px solid var(--buttons-blue-hover, #68A2CA);
+}
+.card-item__select:focus{
+    outline: 3px solid var(--buttons-blue-hover, #68A2CA);
 }
 
 .button-card_active{
@@ -420,6 +451,9 @@ border: 2px solid var(--forms-elements-1, #E5E5E5);
     height: 48px;
     border-radius: 4px;
 border: 2px solid var(--forms-elements-1, #E5E5E5);
+}
+.card-item__button{
+    margin-left: auto;
 }
 .cards__item-image{
     margin-bottom: 16px;
@@ -539,9 +573,11 @@ margin-right:30px;
 
 .header__navigarion-list{
     display: flex;
+    align-items: center;
     margin: 0;
     padding: 0;
-     width:339px;
+    width:339px;
+    height:64px;
     flex-wrap: wrap;
 }
 
@@ -639,7 +675,18 @@ flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
-
+.vk-svg,.yotube-svg,.tg-svg{
+color:#83B3D3;
+}
+.tg-svg:active{
+    color: #68A2CA4D;
+}
+.vk-svg:active{
+    color: #68A2CA4D;
+}
+.yotube-svg:active{
+    color: #68A2CA4D;
+}
 .address{
     flex-grow: 1;
 text-align: center;
@@ -648,7 +695,15 @@ text-align: center;
 .footer__logo-html-contener{
 margin: 0 auto;
 }
-
+.svg-html{
+ color: black;
+}
+.svg-html:hover{
+color:#756157;
+}
+.svg-html:active{
+    color:#7561574D;
+}
 /*сетка каталог маин*/
 fieldset{
     border: none;
@@ -752,6 +807,9 @@ background: var(--buttons-second, #82B3D3);
 }
 .calculator-button-reset{
 background-color: rgba(255, 0, 0, 0);
+}
+.calculator-button-reset:focus{
+outline: 4px solid var(--buttons-blue-hover, #68A2CA);
 }
 .contener__calculator-button{
 height:104px;
