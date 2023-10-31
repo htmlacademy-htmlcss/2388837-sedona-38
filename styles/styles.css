@@ -144,12 +144,13 @@ text-align: center;
 }
 
 .advantages__list-title{
+    width: 175px;
 font-size: 24px;
 font-weight: 700;
 line-height: 28px;
 text-transform: uppercase;
-margin: 0;
-    margin-bottom: 30px;
+margin: 0 auto;
+ margin-bottom: 30px;
 }
 .border-blue-box{
     width: 60px;
@@ -159,7 +160,7 @@ margin: 0;
     margin-bottom: 30px;
 }
 .border-silver-box{
-     width: 60px;
+    width: 60px;
     height: 2px;
     background: rgba(0, 0, 0, 0.30);
     margin: 0 auto;
@@ -178,11 +179,11 @@ margin:0;
 }
 .advantages__list-silver{
 background: rgba(131, 179, 211, 0.12);
-    padding: 102px 85px;
+    padding: 112px 85px;
 }
 .advantages__list-darcksilver{
     background:  rgba(131, 179, 211, 0.20);
-    padding: 102px 85px;
+    padding: 112px 85px;
 }
 .come-sedon{
     padding: 64px 355px;
