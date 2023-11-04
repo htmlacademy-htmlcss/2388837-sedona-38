@@ -91,7 +91,7 @@ select {
     height: 2px;
     background: #756257;
     position: absolute;
-    top: 62px;
+    top: 42px;
 }
 
 .header__navigarion-active-hostel::before {
@@ -100,7 +100,7 @@ select {
     height: 2px;
     background: #756257;
     position: absolute;
-    top: 62px;
+    top: 42px;
 }
 
 .item_link-search {
@@ -341,11 +341,16 @@ select {
 }
 
 .form__form-email {
-    width: 100%;
+    width: 452px;
     padding: 12px 20px;
     border-radius: 4px 0px 0px 4px;
     background: var(--basic-light, #F2F2F2);
     border: 0;
+    color: var(--basic-black, #000);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    font: inherit;
 }
 
 .form__form-email::placeholder {
@@ -354,9 +359,11 @@ select {
     font-weight: 400;
     line-height: 24px;
 }
-.form__form-email:focus-visible{
-    outline:3px solid #83B3D3;
+
+.form__form-email:focus-visible {
+    outline: 3px solid #83B3D3;
 }
+
 .form__form-button {
     color: var(--texts-background-deafault, #FFF);
     text-align: center;
@@ -696,13 +703,16 @@ select {
 .pagination__item-active .pagination__item-link:focus {
     outline: none;
 }
-.pagination__item-default:hover{
+
+.pagination__item-default:hover {
     opacity: 0.8;
 }
-.pagination__item-default:active{
+
+.pagination__item-default:active {
     opacity: 0.5;
     transition: 0.3;
 }
+
 .pagination__link-active {
     color: black;
 }
@@ -721,6 +731,15 @@ select {
     position: relative;
 }
 
+.header__link-logo:hover {
+    opacity: 0.8;
+    transition: 0.4s;
+}
+
+.header__link:focus-visible {
+    outline: 3px solid #83B3D3;
+}
+
 .header__navigarion-list {
     display: flex;
     align-items: center;
@@ -729,6 +748,14 @@ select {
     width: 339px;
     height: 64px;
     flex-wrap: wrap;
+}
+
+.header__navigarion-list li:first-child {
+    position: relative;
+}
+
+.header__navigarion-list li:last-child {
+    position: relative;
 }
 
 .page2:hover {
@@ -975,19 +1002,67 @@ fieldset {
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
+    font: inherit;
+    z-index: 1;
+    margin-right: 2px;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.start-range,.end-range{
+    opacity: 0.3;
+
+font-family: PT Sans;
+font-weight: 400;
+line-height: 24px;
+}
+.end-range{
+    position: absolute;
+        left: 248px;
+    z-index: 2;
+    top: 12px;
+}
+.start-range {
+    position: absolute;
+    z-index: 2;
+    left: 106px;
+    right: 20px;
+    top: 12px;
+    width: 25px;
+}
+.fieldset-range {
+    width: 288px;
+    margin: 0;
+    padding: 0;
+    margin-right: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fieldset-range__paragraph {
+    position: relative;
+}
+
 
 .fieldset-range__paragraph-input::placeholder {
     color: var(--basic-black, #000);
     font-size: 18px;
     font-weight: 700;
-    line-height: 24px;
-    /* 133.333% */
+    line-height: 23px;
+
 }
 
 .fieldset-range__paragraph-input:focus-visible {
     outline: 3px solid #83B3D3;
 }
+
+
 
 .fieldset-range__paragraph input:first-child {
     margin-right: 2px;
@@ -1002,17 +1077,43 @@ fieldset {
     width: 287px;
 }
 
-.fieldset-range {
-    width: 288px;
-    margin: 0;
-    padding: 0;
-    margin-right: 70px;
-}
 
 .fieldset-range__paragraph {
     margin: 0;
     display: flex;
     margin-bottom: 36px;
+}
+.range-skale{
+    position: relative;
+width: 287px;
+height: 4px;
+background: rgba(255,255,255,0.3)
+}
+.range-bar{
+    position: absolute;
+height: 4px;
+background: #FFF;
+}
+.range-button{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius:4px;
+    border: none;
+    background: inherit;
+    cursor: pointer;
+
+}
+.toggle-max{
+    left: 224px;
+    top: -8px;
+}
+.toggle-min{
+    left: 0;
+    top: -8px;
+}
+.range-button:hover{
+    opacity: 0.8;
 }
 
 .calculator-button {
@@ -1061,6 +1162,7 @@ fieldset {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-self: end;
 }
 
 .contener__calculator-button:first-child {
@@ -1092,17 +1194,19 @@ fieldset {
     cursor: pointer;
 }
 
-.cards-list {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
+
+.cards-list{
+ display: grid;
+    grid-template-columns: repeat(3,340px);
+    grid-template-rows: repeat(2,438px);
+     padding: 0;
     margin: 0;
     grid-gap: 20px;
     padding-bottom: 40px;
     border-bottom: 1px solid #E6E6E6;
     margin-bottom: 40px;
-}
 
+}
 .cards-contener {
     width: 1060px;
     margin: 0 auto;

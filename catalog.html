@@ -83,30 +83,39 @@
                             <legend class="fieldset__legend">Тип жилья:</legend>
                             <ul class="fieldset__list fieldset__list">
                                 <li class="fieldset__item fieldset__item-radio">
-                                    <input type="radio" class="fieldset__item-input-radio" id="hostel" name="radio" checked value="Гостиницы">
+                                    <input type="radio" class="fieldset__item-input-radio" id="hostel" name="Отель" checked value="Гостиницы">
                                     <label for="hostel" class="fieldset__item-lable">Гостиница</label>
                                 </li>
                                 <li class="fieldset__item fieldset__item-radio">
-                                    <input type="radio" class="fieldset__item-input-radio" id="motel" name="radio" value="Мотель">
+                                    <input type="radio" class="fieldset__item-input-radio" id="motel" name="Отель" value="Мотель">
                                     <label for="motel" class="fieldset__item-lable">Мотель</label>
                                 </li>
                                 <li class="fieldset__item fieldset__item-radio">
-                                    <input type="radio" class="fieldset__item-input-radio" name="radio" id="appartaments" value="Аппартаменты">
+                                    <input type="radio" class="fieldset__item-input-radio" name="Отель" id="appartaments" value="Аппартаменты">
                                     <label for="appartaments" class="fieldset__item-lable">Апартаменты</label>
                                 </li>
                             </ul>
                         </fieldset>
                         <fieldset class="fieldset-range">
-                            <legend class="fieldset__legend">
-                                Стоимость, ₽:
-                            </legend>
-                            <p class="fieldset-range__paragraph">
-                                <!--                                <label for="Ot">От</label>-->
-                                <input type="text" id="Ot" placeholder="0" class="fieldset-range__paragraph-input">
-                                <!--                                <label for="Do">До</label>-->
-                                <input type="text" id="Do" placeholder="9000" class="fieldset-range__paragraph-input">
-                            </p>
-                            <input type="range" class="fieldset-range__range">
+                                <legend class="fieldset__legend">
+                                    Стоимость, ₽:
+                                </legend>
+                                <p class="fieldset-range__paragraph">
+                                    <span class="start-range">от</span>
+                                    <input type="number" id="Ot" placeholder="0" class="fieldset-range__paragraph-input" name="От" min="0">
+                                    <span class="end-range">до</span>
+                                    <input type="number" id="Do" placeholder="9000" class="fieldset-range__paragraph-input" name="До" max="9000">
+                                </p>
+                                <div class="range">
+                                    <div class="range-skale">
+                                       <div class="range-bar start">
+                                            <button class="range-button toggle-min" type="button"></button>
+                                        </div>
+                                        <div class="range-bar" style="width: 226px">
+                                            <button class="range-button toggle-max" type="button"></button>
+                                        </div>
+                                    </div>
+                                </div>
                         </fieldset>
                         <div class="contener__calculator-button">
                             <button type="submit" class="calculator-button calculator-button-apply">Применить</button>
