@@ -11,7 +11,7 @@
     <div class="body-contener">
         <header class="header">
             <div class="header-container">
-                <a href="index.html" class="header__link">
+                <a href="index.html" class="header__link ">
                     <img src="imges/logo-sedon.svg" alt="Логотип седон" width="140" height="70" class="header__link-logo">
                 </a>
                 <nav class="header__navigarion">
@@ -19,8 +19,8 @@
                         <li class="header__navigarion-item">
                             <a href="index.html" class="header__navigarion-link page1">Главная </a>
                         </li>
-                        <li class="header__navigarion-item page2">
-                            <a href="#" class="header__navigarion-link">О Седоне </a>
+                        <li class="header__navigarion-item">
+                            <a href="#" class="header__navigarion-link  page1">О Седоне </a>
                         </li>
                         <li class="header__navigarion-item">
                             <a class="header__navigarion-link header__navigarion-active-hostel">Гостиницы</a>
@@ -97,25 +97,31 @@
                             </ul>
                         </fieldset>
                         <fieldset class="fieldset-range">
-                                <legend class="fieldset__legend">
-                                    Стоимость, ₽:
-                                </legend>
-                                <p class="fieldset-range__paragraph">
+                            <legend class="fieldset__legend">
+                                Стоимость, ₽:
+                            </legend>
+                            <p class="fieldset-range__paragraph">
+                                <label class="lable-range-ot">
+                                    <input type="number" id="Ot" class="fieldset-range__paragraph-input" name="От" min="0" value="0">
                                     <span class="start-range">от</span>
-                                    <input type="number" id="Ot" placeholder="0" class="fieldset-range__paragraph-input" name="От" min="0">
+                                </label>
+
+                                <label class="lable-range-do">
                                     <span class="end-range">до</span>
-                                    <input type="number" id="Do" placeholder="9000" class="fieldset-range__paragraph-input" name="До" max="9000">
-                                </p>
-                                <div class="range">
-                                    <div class="range-skale">
-                                       <div class="range-bar start">
-                                            <button class="range-button toggle-min" type="button"></button>
-                                        </div>
-                                        <div class="range-bar" style="width: 226px">
-                                            <button class="range-button toggle-max" type="button"></button>
-                                        </div>
+                                    <input type="number" id="Do" class="fieldset-range__paragraph-input" name="До" max="9000" value="9000">
+                                </label>
+
+                            </p>
+                            <div class="range">
+                                <div class="range-skale">
+                                    <div class="range-bar start">
+                                        <button class="range-button toggle-min" type="button"></button>
+                                    </div>
+                                    <div class="range-bar" style="width: 226px">
+                                        <button class="range-button toggle-max" type="button"></button>
                                     </div>
                                 </div>
+                            </div>
                         </fieldset>
                         <div class="contener__calculator-button">
                             <button type="submit" class="calculator-button calculator-button-apply">Применить</button>
@@ -339,6 +345,54 @@
                 </div>
             </div>
         </footer>
+        <div class="contener-contener modal-container-close">
+            <div class="contener-modal">
+                <form action="https://echo.htmlacademy.ru/" method="post" class="content-contener-dorm">
+                    <div class="contener-title-and-button">
+                        <h2 class="title-modal">
+                            Поиск гостиницы в Седоне
+                        </h2>
+                        <button class="modal-button-exit">
+                            <span class="visually-hidden">Выйти с модального окна</span>
+                        </button>
+                    </div>
+                    <div class="contner-input">
+                        <label for="dataZaezda" class="lable-zaezd">Дата заезда:</label>
+                        <div class="contener-relative">
+                            <input type="text" id="dataZaezda" class="input-modal-data" name="Дата заезда:" value="27 апреля 2020" placeholder="Укажите дату">
+                            <span class="description-eror">Мы не можем отправить вас в прошлое</span>
+                        </div>
+                    </div>
+                    <div class="contner-input">
+                        <label for="dataViezda" class="lable-viezd">Дата выезда:</label>
+                        <div class="contener-relative">
+                            <input type="text" id="dataViezda" class="input-modal-data" name="Дата выезда:" value="1 сентября 2023" placeholder="Укажите дату">
+                            <span class="description-good">На эти даты есть свободные номера. Пока есть.</span>
+                        </div>
+                    </div>
+                    <div class="contner-adults-and-child">
+                        <div class="contner-adults">
+                            <label for="adults" class="adults-labale">Взрослые:</label>
+                            <div class="contener-relative-button">
+                                <button class="minus minus-adults"></button>
+                                <input type="text" id="adults" min="1" max="99" required class="input-adults-and-child" name="Количество взрослых:" value="2">
+                                <button class="plus plus-adults"></button>
+                            </div>
+                        </div>
+                        <div class="contner-child">
+                            <label for="child" class="child-lable">Дети:</label>
+                            <div class="description-child"></div>
+                            <div class="contener-relative-button">
+                                <button class="minus child-minus"></button>
+                                <input type="text" id="child" min="1" max="99" required class="input-adults-and-child" name="Количество детей:" value="2">
+                                <button class="plus child-plus"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="button-find"><span>Найти</span></button>
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 
