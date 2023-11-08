@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>catalog</title>
+    <title>Sedon</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
@@ -52,9 +52,7 @@
                     </h1>
                     <ul class="bread">
                         <li class="bread__item">
-                            <a href="index.html" class="bread__item-link">
-                                <span class="visually-hidden">На главную</span>
-                            </a>
+                            <span href="index.html" class="bread__item-link"></span>
                         </li>
                         <li class="bread__item">
                             <span class="bread__item-arrow"></span>
@@ -352,7 +350,7 @@
                         <h2 class="title-modal">
                             Поиск гостиницы в Седоне
                         </h2>
-                        <button class="modal-button-exit">
+                        <button class="modal-button-exit" type="button">
                             <span class="visually-hidden">Выйти с модального окна</span>
                         </button>
                     </div>
@@ -381,7 +379,15 @@
                         </div>
                         <div class="contner-child">
                             <label for="child" class="child-lable">Дети:</label>
-                            <div class="description-child"></div>
+                            <span class="description-child">
+                                <button class="tooltip-toggle" type="button">
+                                    <svg class="tooltip-toggle-img" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="13" cy="13" r="13" fill="currentColor" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" fill="#fff" />
+                                    </svg>
+                                </button>
+                                <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                            </span>
                             <div class="contener-relative-button">
                                 <button class="minus child-minus"></button>
                                 <input type="text" id="child" min="1" max="99" required class="input-adults-and-child" name="Количество детей:" value="2">
