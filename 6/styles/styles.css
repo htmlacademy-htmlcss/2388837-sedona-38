@@ -144,11 +144,12 @@ select {
     background-position: center;
     min-width: 44px;
     min-height: 64px;
+    margin-right: 33px;
 }
 
 .welcome {
     background-image: url(../imges/konvert.jpg);
-    background-size: 100% auto;
+    background-size: 100% 454px;
     background-repeat: no-repeat;
     padding: 51px 82px;
     background-color: aliceblue;
@@ -283,8 +284,11 @@ select {
 
 .interested {
     padding: 96px 304px;
-    ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 
 .interested__title {
     font-size: 30px;
@@ -319,7 +323,6 @@ select {
 }
 
 .interested__link-contener {
-    text-align: center;
     margin: 0;
 }
 
@@ -452,7 +455,7 @@ select {
     background-image: url(../imges/bread-catalog-heder/bread-item-home.svg);
     background-position: center;
     background-repeat: no-repeat;
-    width: 20px;
+    width: 13px;
     height: 20px;
     display: inline-block;
 }
@@ -460,19 +463,20 @@ select {
     outline: 3px solid #83B3D3;
     border-radius: 15px;
 }
-.bread__item-arrow {
+.bread__item-hostel::before{
+    content: "";
     background-image: url(../imges/bread-catalog-heder/bread-item-strelka.svg);
-    background-position: center;
+        display: inline-block;
     background-repeat: no-repeat;
     width: 8px;
-    height: 100%;
-    display: inline-block;
+    height: 20px;
+    background-position: center;
 }
-
 .bread__item-hostel {
     color: #FFF;
     font-size: 16px;
-    line-height: 21px;
+    display: flex;
+    grid-gap: 10px;
 }
 
 .fieldset__legend {
@@ -558,7 +562,6 @@ select {
     background-image: url(../imges/strelka.svg);
     background-repeat: no-repeat;
     width: 292px;
-    height: 49px;
     background-position: 260px 21px;
 }
 
@@ -588,7 +591,7 @@ select {
     height: 48px;
 }
 
-.button-card-item__icran {
+.button-card-item__screen {
     background-image: url(../imges/button-card/button-icran.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -752,11 +755,10 @@ select {
 
 /*Сетка header для двух страниц*/
 .header-container {
-    width: 1060px;
-    margin: 0 auto;
     display: flex;
     align-items: center;
     height: 64px;
+    padding: 0 70px;
 }
 
 .header__link {
@@ -804,8 +806,6 @@ select {
 .header__list {
     display: flex;
     align-items: center;
-    width: 268px;
-    justify-content: flex-end;
     margin-left: auto;
     flex-wrap: wrap;
 }
@@ -890,11 +890,9 @@ select {
 
 /*Футер сетка две страницы*/
 .footer-contener {
-    width: 1060px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding: 40px 0 30px;
+    padding: 40px 70px 30px;
 }
 
 .footer__list {
@@ -981,11 +979,10 @@ fieldset {
     margin: 0;
     display: flex;
     margin-bottom: 40px;
+    grid-gap: 10px;
 }
 
-.bread li {
-    margin-right: 10px;
-}
+
 
 .bread li:last-child {
     margin: 0;
@@ -1411,7 +1408,19 @@ input::-webkit-inner-spin-button {
 .lable-viezd {
     width: 137px;
 }
-
+.contener-modal-data{
+    position: relative;
+}
+.img-calendar{
+    position: absolute;
+    background-image:  url(../imges/calendar.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+   width: 16px;
+    height:15px;
+    top: 14px;
+    right: 20px;
+}
 .input-modal-data {
     padding: 12px 20px;
     border-radius: 4px;
@@ -1514,7 +1523,6 @@ input::-webkit-inner-spin-button {
 
 .tooltip-text {
     width: 256px;
-    height: 143px;
     border-radius: 10px;
     background: var(--basic-dark, #333);
     box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.30);
@@ -1551,7 +1559,7 @@ input::-webkit-inner-spin-button {
     display: block;
     cursor: pointer;
 }
-.tooltip-toggle:active + .tooltip-text{
+.tooltip-toggle:hover + .tooltip-text{
   display: block;
 }
 .tooltip-toggle .tooltip-toggle-img {
@@ -1635,6 +1643,4 @@ input::-webkit-inner-spin-button {
     background-position: center
 }
 
-.modal-container-close{
-    display: none;
-}
+

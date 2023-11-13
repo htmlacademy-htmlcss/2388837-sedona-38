@@ -53,10 +53,7 @@
                     </h1>
                     <ul class="bread">
                         <li class="bread__item">
-                            <span href="index.html" class="bread__item-link"></span>
-                        </li>
-                        <li class="bread__item">
-                            <span class="bread__item-arrow"></span>
+                            <span class="bread__item-link"></span>
                         </li>
                         <li class="bread__item-hostel">Гостиницы</li>
                     </ul>
@@ -147,7 +144,7 @@
                                     </button>
                                 </li>
                                 <li class="button-card-item">
-                                    <button type="button" class="button-card button-card-item__icran">
+                                    <button type="button" class="button-card button-card-item__screen">
                                         <span class="visually-hidden">Список на весь экран</span>
                                     </button>
                                 </li>
@@ -358,14 +355,20 @@
                     <div class="contner-input">
                         <label for="dataZaezda" class="lable-zaezd">Дата заезда:</label>
                         <div class="contener-relative">
-                            <input type="text" id="dataZaezda" class="input-modal-data" name="Дата заезда:" value="27 апреля 2020" placeholder="Укажите дату">
+                            <div class="contener-modal-data">
+                                <input type="text" id="dataZaezda" class="input-modal-data" name="Дата заезда:" value="27 апреля 2020" placeholder="Укажите дату">
+                                <span class="img-calendar"></span>
+                            </div>
                             <span class="description-eror">Мы не можем отправить вас в прошлое</span>
                         </div>
                     </div>
                     <div class="contner-input">
                         <label for="dataViezda" class="lable-viezd">Дата выезда:</label>
                         <div class="contener-relative">
-                            <input type="text" id="dataViezda" class="input-modal-data" name="Дата выезда:" value="1 сентября 2023" placeholder="Укажите дату">
+                            <div class="contener-modal-data">
+                                <input type="text" id="dataViezda" class="input-modal-data" name="Дата выезда:" value="1 сентября 2023" placeholder="Укажите дату">
+                                <span class="img-calendar"></span>
+                            </div>
                             <span class="description-good">На эти даты есть свободные номера. Пока есть.</span>
                         </div>
                     </div>
