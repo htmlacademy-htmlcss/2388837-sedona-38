@@ -243,6 +243,9 @@ main {
     position: relative;
     width: 175px
 }
+.advantages__list-flex{
+    display: flex;
+}
 
 .advantages__list-title::after {
     content: "";
@@ -1003,7 +1006,8 @@ main {
 
 .advantages__list-image {
     object-fit: cover;
-    min-height: 385px;
+     width: 800px;
+      height: 100%;
 }
 
 .servis__list {
@@ -1566,7 +1570,7 @@ input::-webkit-inner-spin-button {
     width: 52px;
     height: 52px;
     border: 0;
-    fill: #F2F2F2;
+    fill: #f2f2f2;
     border-radius: 50%;
     background-position: center;
     background-repeat: no-repeat;
@@ -1621,12 +1625,15 @@ input::-webkit-inner-spin-button {
     left: 20px;
     top: -5px;
 }
-
-.lable-zaezd,
-.lable-viezd {
+.date-of-departure{
+    position: relative;
+    top: -5px;
+    margin-right: 18px;
+}
+.lable-zaezd{
     width: 137px;
     position: relative;
-    top: -6px;
+    top: 2px;
 }
 
 .container-modal-data {
