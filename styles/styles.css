@@ -1566,7 +1566,7 @@ input::-webkit-inner-spin-button {
     width: 52px;
     height: 52px;
     border: 0;
-    fill: #F2F2F2;
+    fill: #f2f2f2;
     border-radius: 50%;
     background-position: center;
     background-repeat: no-repeat;
@@ -1621,12 +1621,15 @@ input::-webkit-inner-spin-button {
     left: 20px;
     top: -5px;
 }
-
-.lable-zaezd,
-.lable-viezd {
+.date-of-departure{
+    position: relative;
+    top: -5px;
+    margin-right: 18px;
+}
+.lable-zaezd{
     width: 137px;
     position: relative;
-    top: -6px;
+    top: 2px;
 }
 
 .container-modal-data {
@@ -1853,7 +1856,6 @@ input::-webkit-inner-spin-button {
     height: 100%;
     background: rgba(242, 242, 242, 0.80);
     margin: 0 auto;
-    display: none;
 }
 
 .popover-type {
