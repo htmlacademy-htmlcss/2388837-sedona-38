@@ -243,6 +243,9 @@ main {
     position: relative;
     width: 175px
 }
+.advantages__list-flex{
+    display: flex;
+}
 
 .advantages__list-title::after {
     content: "";
@@ -1003,7 +1006,8 @@ main {
 
 .advantages__list-image {
     object-fit: cover;
-    min-height: 385px;
+     width: 800px;
+      height: 100%;
 }
 
 .servis__list {
@@ -1856,6 +1860,7 @@ input::-webkit-inner-spin-button {
     height: 100%;
     background: rgba(242, 242, 242, 0.80);
     margin: 0 auto;
+    display: none;
 }
 
 .popover-type {
