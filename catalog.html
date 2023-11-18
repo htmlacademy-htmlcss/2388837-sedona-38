@@ -5,36 +5,38 @@
     <meta charset="UTF-8">
     <title>Sedon</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon"  href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <div class="body-contener">
+    <div class="body-container">
         <header class="header">
             <div class="header-container">
                 <a class="header__link">
-                    <img class="header__link-logo" src="imges/logo-sedon.svg" alt="Логотип седон" width="140" height="70" >
+                    <img class="header__link-logo" src="imges/logo-sedon.svg" alt="Логотип седон." width="140" height="70">
                 </a>
-                <nav class="header__navigarion">
-                    <ul class="header__navigarion-list">
-                        <li class="header__navigarion-item ">
-                            <a class="header__navigarion-link " href="index.html">Главная </a>
+                <nav class="header__navigation">
+                    <ul class="header__navigation-list">
+                        <li class="header__navigation-item ">
+                            <a class="header__navigation-link " href="index.html">Главная </a>
                         </li>
-                        <li class="header__navigarion-item page2">
-                            <a class="header__navigarion-link" href="#" >О Седоне </a>
+                        <li class="header__navigation-item page2">
+                            <a class="header__navigation-link" href="#">О Седоне </a>
                         </li>
-                        <li class="header__navigarion-item page2">
-                            <a class="header__navigarion-link header__navigarion-active" href="catalog.html" >Гостиницы</a>
+                        <li class="header__navigation-item page2">
+                            <a class="header__navigation-link header__navigation-active" href="catalog.html">Гостиницы</a>
                         </li>
                     </ul>
                 </nav>
                 <ul class="header__list">
                     <li class="header__item ">
-                        <a class="item_link item_link-search " href="#" >
+                        <a class="item_link item_link-search " href="#">
                             <span class="visually-hidden">Поиск</span>
                         </a>
                     </li>
                     <li class="header__item ">
-                        <a  class=" item_link item_link-like" href="#">
+                        <a class=" item_link item_link-like" href="#">
                             <span class="visually-hidden">Избранное</span>
                         </a>
                     </li>
@@ -46,7 +48,7 @@
         </header>
         <main class="main-catalog">
             <section class="main__header">
-                <div class="main-catalog-contener">
+                <div class="main-catalog-container">
                     <h1 class="heder__title">
                         Гостиницы Седоны
                     </h1>
@@ -56,21 +58,21 @@
                         </li>
                         <li class="bread__item-hostel">Гостиницы</li>
                     </ul>
-                    <form class="main__header-form" action="https://echo.htmlacademy.ru/" method="get" >
+                    <form class="main__header-form" action="https://echo.htmlacademy.ru/" method="get">
                         <fieldset class="calculator__fieldset-box ">
                             <legend class="fieldset__legend">Инфраструктура:</legend>
                             <ul class="fieldset__list">
                                 <li class="fieldset__item">
-                                    <input class="fieldset__item-input" type="checkbox"  id="pool" name="pool" checked>
-                                    <label  class="fieldset__item-lable" for="pool">Бассейн</label>
+                                    <input class="fieldset__item-input" type="checkbox" id="pool" name="pool" checked>
+                                    <label class="fieldset__item-lable" for="pool">Бассейн</label>
                                 </li>
                                 <li class="fieldset__item">
-                                    <input class="fieldset__item-input" type="checkbox"  id="parking" name="parking" checked>
-                                    <label class="fieldset__item-lable" for="parking" >Парковка</label>
+                                    <input class="fieldset__item-input" type="checkbox" id="parking" name="parking" checked>
+                                    <label class="fieldset__item-lable" for="parking">Парковка</label>
                                 </li>
                                 <li class="fieldset__item">
-                                    <input  class="fieldset__item-input" type="checkbox" name="Wi-Fi" id="wi-fi">
-                                    <label class="fieldset__item-lable" for="wi-fi" >Wi-Fi</label>
+                                    <input class="fieldset__item-input" type="checkbox" name="Wi-Fi" id="wi-fi">
+                                    <label class="fieldset__item-lable" for="wi-fi">Wi-Fi</label>
                                 </li>
                             </ul>
                         </fieldset>
@@ -78,16 +80,16 @@
                             <legend class="fieldset__legend fieldset__legend-type-hostel">Тип жилья:</legend>
                             <ul class="fieldset__list fieldset__list">
                                 <li class="fieldset__item fieldset__item-radio">
-                                    <input class="fieldset__item-input-radio" type="radio"  id="hostel" name="hostel" checked value="Гостиницы">
-                                    <label  class="fieldset__item-lable" for="hostel">Гостиница</label>
+                                    <input class="fieldset__item-input-radio" type="radio" id="hostel" name="hostel" checked value="Гостиницы">
+                                    <label class="fieldset__item-lable" for="hostel">Гостиница</label>
                                 </li>
                                 <li class="fieldset__item fieldset__item-radio">
-                                    <input class="fieldset__item-input-radio"  type="radio" id="motel" name="motel" value="Мотель">
-                                    <label class="fieldset__item-lable" for="motel" >Мотель</label>
+                                    <input class="fieldset__item-input-radio" type="radio" id="motel" name="motel" value="Мотель">
+                                    <label class="fieldset__item-lable" for="motel">Мотель</label>
                                 </li>
                                 <li class="fieldset__item fieldset__item-radio">
-                                    <input class="fieldset__item-input-radio" type="radio"  name="appartaments" id="appartaments" value="Аппартаменты">
-                                    <label  class="fieldset__item-lable"  for="appartaments">Апартаменты</label>
+                                    <input class="fieldset__item-input-radio" type="radio" name="appartaments" id="appartaments" value="Аппартаменты">
+                                    <label class="fieldset__item-lable" for="appartaments">Апартаменты</label>
                                 </li>
                             </ul>
                         </fieldset>
@@ -97,13 +99,13 @@
                             </legend>
                             <p class="fieldset-range__paragraph">
                                 <label class="lable-range-ot lable-range">
-                                    <input  class="fieldset-range__paragraph-input fieldset-range__paragraph-input-start" type="number" id="Ot" name="От" min="0" value="0">
+                                    <input class="fieldset-range__paragraph-input fieldset-range__paragraph-input-start" type="number" id="Ot" name="От" min="0" value="0">
                                     <span class="start-range">от</span>
                                 </label>
 
                                 <label class="lable-range-do  lable-range">
                                     <span class="end-range">до</span>
-                                    <input class="fieldset-range__paragraph-input fieldset-range__paragraph-input-end" type="number" id="Do"  name="До" max="9000" value="9000">
+                                    <input class="fieldset-range__paragraph-input fieldset-range__paragraph-input-end" type="number" id="Do" name="До" max="9000" value="9000">
                                 </label>
 
                             </p>
@@ -118,56 +120,56 @@
                                 </div>
                             </div>
                         </fieldset>
-                        <div class="contener__calculator-button">
-                            <button class="calculator-button calculator-button-apply" type="submit" >Применить</button>
-                            <button class="calculator-button calculator-button-reset" type="button" >Сбросить</button>
+                        <div class="container__calculator-button">
+                            <button class="calculator-button calculator-button-apply" type="submit">Применить</button>
+                            <button class="calculator-button calculator-button-reset" type="button">Сбросить</button>
                         </div>
                     </form>
                 </div>
             </section>
             <section class="cards">
-                    <h2 class="visually-hidden">Список отелей</h2>
-                    <ul class="card-list">
-                        <li class="card-items">Найдено гостиниц: 38</li>
-                        <li class="card-item card-item-select">
-                            <select class="card-item__select" aria-label="Выпадающие меню" name="menu" id="menu" >
-                                <option class="card-item__select-option"  value="" >Сначала дешевые</option>
-                            </select>
-                        </li>
-                        <li class="card-item card-item__button">
-                            <ul class="button-card-list">
-                                <li class="button-card-item">
-                                    <button class="button-card button-card-item__card button-card_active"  type="button" >
-                                        <span class="visually-hidden">Список карточкой</span>
-                                    </button>
-                                </li>
-                                <li class="button-card-item">
-                                    <button class="button-card button-card-item__screen" type="button" >
-                                        <span class="visually-hidden">Список на весь экран</span>
-                                    </button>
-                                </li>
-                                <li class="button-card-item">
-                                    <button class="button-card button-card-item__list" type="button" >
-                                        <span class="visually-hidden">Списоком</span>
-                                    </button>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                <div class="cards-contener">
+                <h2 class="visually-hidden">Список отелей</h2>
+                <ul class="card-list">
+                    <li class="card-items">Найдено гостиниц: 38</li>
+                    <li class="card-item card-item-select">
+                        <select class="card-item__select" aria-label="Выпадающие меню" name="menu" id="menu">
+                            <option class="card-item__select-option" value="">Сначала дешевые</option>
+                        </select>
+                    </li>
+                    <li class="card-item card-item__button">
+                        <ul class="button-card-list">
+                            <li class="button-card-item">
+                                <button class="button-card button-card-item__card button-card_active" type="button">
+                                    <span class="visually-hidden">Список карточкой</span>
+                                </button>
+                            </li>
+                            <li class="button-card-item">
+                                <button class="button-card button-card-item__screen" type="button">
+                                    <span class="visually-hidden">Список на весь экран</span>
+                                </button>
+                            </li>
+                            <li class="button-card-item">
+                                <button class="button-card button-card-item__list" type="button">
+                                    <span class="visually-hidden">Списоком</span>
+                                </button>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="cards-container">
                     <h2 class="visually-hidden">Список карточек товара</h2>
                     <ul class="cards-list">
                         <li class="cards__item">
                             <a class="list-link-card" href="#">
-                                <img class="cards__item-image" src="imges/hotel-card/Amara-Resort-Spa.jpg" alt="Amara Resort Spa"  width="300" height="212">
-                            <h3 class="cards__item-title ">Amara Resort & Spa</h3>
+                                <img class="cards__item-image" src="imges/hotel-card/Amara-Resort-Spa.jpg"  width="300" height="212">
+                                <h3 class="cards__item-title ">Amara Resort & Spa</h3>
                             </a>
                             <p class="cards__item-description"><span class="card-hostel">Гостиница</span><span><b>От 4000 ₽</b></span></p>
                             <ul class="list-button-cards">
                                 <li class="item-button-cards"><button class="cards__item-button cards__item-brown" type="button">Подробнее</button></li>
                                 <li class="item-button-cards"> <button class="cards__item-button cards__item-blue" type="button">В избранное</button></li>
                             </ul>
-                            <div class="contener-reting">
+                            <div class="container-reting">
                                 <ul class="star-list">
                                     <li class="star-item">
                                         <span class="star-item__span"></span>
@@ -186,16 +188,16 @@
                             </div>
                         </li>
                         <li class="cards__item">
-                            <a class="list-link-card"  href="#">
-                                <img class="cards__item-image" src="imges/hotel-card/Villas-at-Poco-Diablo.jpg" alt="Villas at Poco Diablo"  width="300" height="212">
+                            <a class="list-link-card" href="#">
+                                <img class="cards__item-image" src="imges/hotel-card/Villas-at-Poco-Diablo.jpg"  width="300" height="212">
                                 <h3 class="cards__item-title">Villas at Poco Diablo</h3>
                             </a>
-                             <p class="cards__item-description"><span class="card-hostel">Гостиница</span><span><b>От 5000 ₽</b></span></p>
+                            <p class="cards__item-description"><span class="card-hostel">Гостиница</span><span><b>От 5000 ₽</b></span></p>
                             <ul class="list-button-cards">
                                 <li class="item-button-cards"><button class="cards__item-button cards__item-brown" type="button">Подробнее</button></li>
                                 <li class="item-button-cards"> <button class="cards__item-button cards__item-acrive-green" type="button">В избранном</button></li>
                             </ul>
-                            <div class="contener-reting">
+                            <div class="container-reting">
                                 <ul class="star-list">
                                     <li class="star-item">
                                         <span class="star-item__span"></span>
@@ -214,16 +216,16 @@
                             </div>
                         </li>
                         <li class="cards__item">
-                            <a class="list-link-card"  href="#">
-                                <img class="cards__item-image" src="imges/hotel-card/Desert-Quail-Inn.jpg" alt="Desert Quail Inn"  width="300" height="212">
+                            <a class="list-link-card" href="#">
+                                <img class="cards__item-image" src="imges/hotel-card/Desert-Quail-Inn.jpg"  width="300" height="212">
                                 <h3 class="cards__item-title">Desert Quail Inn</h3>
                             </a>
-                             <p class="cards__item-description"><span class="card-hostel">Гостиница</span><span><b>От 2500 ₽</b></span></p>
+                            <p class="cards__item-description"><span class="card-hostel">Гостиница</span><span><b>От 2500 ₽</b></span></p>
                             <ul class="list-button-cards">
                                 <li class="item-button-cards"><button class="cards__item-button cards__item-brown" type="button">Подробнее</button></li>
                                 <li class="item-button-cards"> <button class="cards__item-button cards__item-blue " type="button">В избранное</button></li>
                             </ul>
-                            <div class="contener-reting">
+                            <div class="container-reting">
                                 <ul class="star-list">
                                     <li class="star-item">
                                         <span class="star-item__span"></span>
@@ -240,16 +242,16 @@
                             </div>
                         </li>
                         <li class="cards__item">
-                            <a class="list-link-card"  href="#">
-                                <img class="cards__item-image"  src="imges/hotel-card/Gree-Tree-Inn.jpg" alt="Gree Tree Inn" width="300" height="212">
-                            <h3 class="cards__item-title">GreenTree Inn</h3>
+                            <a class="list-link-card" href="#">
+                                <img class="cards__item-image" src="imges/hotel-card/Gree-Tree-Inn.jpg"  width="300" height="212">
+                                <h3 class="cards__item-title">GreenTree Inn</h3>
                             </a>
-                             <p class="cards__item-description"><span class="card-hostel">Гостиница</span><span><b>От 1500 ₽</b></span></p>
+                            <p class="cards__item-description"><span class="card-hostel">Гостиница</span><span><b>От 1500 ₽</b></span></p>
                             <ul class="list-button-cards">
                                 <li class="item-button-cards"><button class="cards__item-button cards__item-brown" type="button">Подробнее</button></li>
                                 <li class="item-button-cards"> <button class="cards__item-button cards__item-blue" type="button">В избранное</button></li>
                             </ul>
-                            <div class="contener-reting">
+                            <div class="container-reting">
                                 <ul class="star-list">
                                     <li class="star-item">
                                         <span class="star-item__span"></span>
@@ -266,47 +268,48 @@
                     </ul>
                     <ul class="pagination">
                         <li class="pagination__item pagination__item-active">
-                            <a class="pagination__item-link pagination__link-active" href="#" >1</a>
+                            <a class="pagination__item-link pagination__link-active" href="#">1</a>
                         </li>
                         <li class="pagination__item pagination__item-default">
-                            <a class="pagination__item-link " href="#" >2</a>
+                            <a class="pagination__item-link " href="#">2</a>
                         </li>
                         <li class="pagination__item pagination__item-default">
-                            <a class="pagination__item-link " href="#" >3</a>
+                            <a class="pagination__item-link " href="#">3</a>
                         </li>
                         <li class="pagination__item pagination__item-default">
-                            <a class="pagination__item-link " href="#" >4</a>
+                            <a class="pagination__item-link " href="#">4</a>
                         </li>
                         <li class="pagination__item pagination__item-active">
-                            <a class="pagination__item-link pagination__link-active " href="#" >...</a>
+                            <a class="pagination__item-link pagination__link-active " href="#">...</a>
                         </li>
                         <li class="pagination__item pagination__item-default">
-                            <a class="pagination__item-link " href="#" >10</a>
+                            <a class="pagination__item-link " href="#">10</a>
                         </li>
                     </ul>
                 </div>
             </section>
 
             <section class="form form-catalog">
-
                 <h2 class="form__title">
-                    Подпишитесь на рассылку
+                    <label for="newsletter-catalog">
+                        Подпишитесь на рассылку
+                    </label>
                 </h2>
                 <p class="form__description">
                     Только полезная информация и никакого спама, честное бойскаутское!
                 </p>
-                <form class="form__form" action="https://echo.htmlacademy.ru/" method="post" >
-                    <input class="form__form-email" type="email" name="email" placeholder="Ваш e-mail"  required >
-                    <button class="form__form-button btn-blue" type="submit" >Подписаться</button>
+                <form class="form__form" action="https://echo.htmlacademy.ru/" method="post">
+                    <input class="form__form-email" type="email" name="email" placeholder="Ваш e-mail" required id="newsletter-catalog">
+                    <button class="form__form-button btn-blue" type="submit">Подписаться</button>
                 </form>
             </section>
 
         </main>
         <footer class="footer">
-            <div class="footer-contener">
+            <div class="footer-container">
                 <ul class="footer__list">
                     <li class="footer__list-item">
-                        <a class="footer__list-link"href="#"  aria-label="Перейти вк страницу">
+                        <a class="footer__list-link" href="#" aria-label="Перейти вк страницу">
                             <svg class="vk-svg" aria-hidden="true" focusable="false" viewBox="0 0 25 15" width="25" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M24.12 1.8c.16-.54 0-.94-.8-.94H20.7c-.67 0-.98.34-1.15.73 0 0-1.33 3.2-3.22 5.27-.61.6-.9.8-1.23.8-.16 0-.41-.2-.41-.75v-5.1c0-.66-.19-.95-.74-.95H9.82c-.42 0-.67.3-.67.59 0 .62.95.76 1.04 2.51v3.8c0 .83-.15.98-.48.98-.9 0-3.06-3.2-4.34-6.88-.25-.72-.5-1-1.18-1H1.57c-.75 0-.9.34-.9.73 0 .68.89 4.07 4.14 8.55 2.17 3.06 5.23 4.72 8 4.72 1.68 0 1.88-.37 1.88-1v-2.32c0-.74.16-.88.7-.88.38 0 1.05.19 2.6 1.66 1.79 1.75 2.08 2.54 3.08 2.54h2.63c.75 0 1.12-.37.9-1.1-.23-.72-1.08-1.77-2.2-3.02-.62-.71-1.54-1.48-1.82-1.86-.39-.5-.28-.71 0-1.15 0 0 3.2-4.42 3.54-5.93Z" fill="currentColor" />
                             </svg>
@@ -314,7 +317,7 @@
                         </a>
                     </li>
                     <li class="footer__list-item">
-                        <a  class="footer__list-link"  href="#" aria-label="Перейти тг страницу">
+                        <a class="footer__list-link" href="#" aria-label="Перейти тг страницу">
                             <svg class="tg-svg" aria-hidden="true" focusable="false" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M16.79.96.84 7.1c-1.09.44-1.08 1.05-.2 1.32l4.1 1.28 9.47-5.98c.44-.27.85-.13.52.17l-7.68 6.93-.28 4.22c.41 0 .6-.2.83-.41l1.99-1.94 4.13 3.06c.77.42 1.31.2 1.5-.71l2.72-12.8c.28-1.1-.43-1.61-1.16-1.28Z" fill="currentColor" />
                             </svg>
@@ -322,7 +325,7 @@
                         </a>
                     </li>
                     <li class="footer__list-item">
-                        <a class="footer__list-link" href="#"  aria-label="Перейти ютуб страницу">
+                        <a class="footer__list-link" href="#" aria-label="Перейти ютуб страницу">
                             <svg class="yotube-svg" aria-hidden="true" focusable="false" width="23" height="18" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M18.94.36H3.51C1.65.36.33 1.95.33 3.76v10.09c0 1.91 1.32 3.5 3.18 3.5h15.65c1.64 0 3.17-1.59 3.17-3.4V3.76c-.22-1.8-1.53-3.4-3.39-3.4ZM7.99 12.89V4.82l7.34 4.04-7.34 4.03Z" fill="currentColor" />
                             </svg>
@@ -331,9 +334,9 @@
                     </li>
                 </ul>
                 <address class="address">
-                    <a class="address_phone" href="tel:+78128121212" >+7 (812) 812-12-12</a>
+                    <a class="address_phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
                 </address>
-                <div class="footer__logo-html-contener">
+                <div class="footer__logo-html-container">
                     <a class="logo-html" href="https://htmlacademy.ru">
 
                         <svg class="svg-html" aria-hidden="true" focusable="false" width="115" height="34" viewBox="0 0 115 34" fill="" xmlns="http://www.w3.org/2000/svg">
@@ -345,9 +348,9 @@
             </div>
         </footer>
         <div class="modal">
-            <div class="contener-modal">
-                <form class="content-contener-dorm" action="https://echo.htmlacademy.ru/" method="post" >
-                    <div class="contener-title-and-button">
+            <div class="container-modal">
+                <form class="content-container-dorm" action="https://echo.htmlacademy.ru/" method="post">
+                    <div class="container-title-and-button">
                         <h2 class="title-modal">
                             Поиск гостиницы в Седоне
                         </h2>
@@ -356,20 +359,20 @@
                         </button>
                     </div>
                     <div class="contner-input">
-                        <label class="lable-zaezd" for="dataZaezda" >Дата заезда:</label>
-                        <div class="contener-relative">
-                            <div class="contener-modal-data">
-                                <input class="input-modal-data" type="text" id="dataZaezda"  name="Дата заезда:" value="27 апреля 2020" placeholder="Укажите дату" required >
+                        <label class="lable-zaezd" for="dataZaezda">Дата заезда:</label>
+                        <div class="container-relative">
+                            <div class="container-modal-data">
+                                <input class="input-modal-data" type="text" id="dataZaezda" name="Дата заезда:" value="27 апреля 2020" placeholder="Укажите дату" required>
                                 <span class="img-calendar"></span>
                             </div>
                             <span class="description-eror">Мы не можем отправить вас в прошлое</span>
                         </div>
                     </div>
                     <div class="contner-input">
-                        <label class="lable-viezd" for="dataViezda" >Дата выезда:</label>
-                        <div class="contener-relative">
-                            <div class="contener-modal-data">
-                                <input  class="input-modal-data input-modal-extit" type="text" id="dataViezda" name="Дата выезда:" value="1 сентября 2021" placeholder="Укажите дату" required >
+                        <label class="lable-viezd" for="dataViezda">Дата выезда:</label>
+                        <div class="container-relative">
+                            <div class="container-modal-data">
+                                <input class="input-modal-data input-modal-extit" type="text" id="dataViezda" name="Дата выезда:" value="1 сентября 2021" placeholder="Укажите дату" required>
                                 <span class="img-calendar"></span>
                             </div>
                             <span class="description-good">На эти даты есть свободные номера. Пока есть.</span>
@@ -378,14 +381,14 @@
                     <div class="contner-adults-and-child">
                         <div class="contner-adults">
                             <label for="adults" class="adults-labale">Взрослые:</label>
-                            <div class="contener-relative-button">
+                            <div class="container-relative-button">
                                 <button class="minus minus-adults"></button>
-                                <input class="input-adults-and-child" type="text" id="adults" min="1" max="99" required  name="Количество взрослых:" value="2" required >
-                                <button class="plus plus-adults"></button>
+                                <input class="input-adults-and-child" type="number" id="adults" min="1" max="99" name="Количество взрослых:" value="2" required>
+                                <button class="add add-adults"></button>
                             </div>
                         </div>
                         <div class="contner-child">
-                            <label class="child-lable" for="child" >Дети:</label>
+                            <label class="child-lable" for="child">Дети:</label>
                             <span class="description-child">
                                 <button class="tooltip-toggle" type="button">
                                     <svg class="tooltip-toggle-img" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -395,14 +398,14 @@
                                 </button>
                                 <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                             </span>
-                            <div class="contener-relative-button">
+                            <div class="container-relative-button">
                                 <button class="minus child-minus"></button>
-                                <input class="input-adults-and-child" type="text" id="child" min="1" max="99" required  name="Количество детей:" value="2">
-                                <button class="plus child-plus"></button>
+                                <input class="input-adults-and-child" type="number" id="child" min="1" max="99" required name="Количество детей:" value="2">
+                                <button class="add child-add"></button>
                             </div>
                         </div>
                     </div>
-                    <button class="button-find" type="submit" ><span>Найти</span></button>
+                    <button class="button-find" type="submit"><span>Найти</span></button>
                 </form>
             </div>
         </div>
