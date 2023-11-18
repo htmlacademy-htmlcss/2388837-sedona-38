@@ -13,7 +13,7 @@
     <div class="body-container">
         <header class="header">
             <div class="header-container">
-                <a class="header__link">
+                <a class="header__link" href="index.html">
                     <img class="header__link-logo" src="imges/logo-sedon.svg" alt="Логотип седон." width="140" height="70">
                 </a>
                 <nav class="header__navigation">
@@ -113,9 +113,9 @@
                                 <div class="range-skale">
                                     <div class="range-bar start">
                                         <button class="range-button toggle-min" type="button"></button>
-                                    </div>
-                                    <div class="range-bar" style="width: 194px">
+                                        <div class="range-bar" style="width: 194px">
                                         <button class="range-button toggle-max" type="button"></button>
+                                    </div>
                                     </div>
                                 </div>
                             </div>
@@ -160,11 +160,14 @@
                     <h2 class="visually-hidden">Список карточек товара</h2>
                     <ul class="cards-list">
                         <li class="cards__item">
-                            <a class="list-link-card" href="#">
+                            <div>
+                                <a class="list-link-card" href="#">
                                 <img class="cards__item-image" src="imges/hotel-card/Amara-Resort-Spa.jpg"  width="300" height="212">
                                 <h3 class="cards__item-title ">Amara Resort & Spa</h3>
                             </a>
-                            <p class="cards__item-description"><span class="card-hostel">Гостиница</span><span><b>От 4000 ₽</b></span></p>
+                            </div>
+                            <div>
+                                <p class="cards__item-description"><span class="card-hostel">Гостиница</span><span><b>От 4000 ₽</b></span></p>
                             <ul class="list-button-cards">
                                 <li class="item-button-cards"><button class="cards__item-button cards__item-brown" type="button">Подробнее</button></li>
                                 <li class="item-button-cards"> <button class="cards__item-button cards__item-blue" type="button">В избранное</button></li>
@@ -186,13 +189,17 @@
                                 </ul>
                                 <p class="cards-rang">Рейтинг: 8,5</p>
                             </div>
+                            </div>
                         </li>
                         <li class="cards__item">
-                            <a class="list-link-card" href="#">
+                            <div>
+                                <a class="list-link-card" href="#">
                                 <img class="cards__item-image" src="imges/hotel-card/Villas-at-Poco-Diablo.jpg"  width="300" height="212">
                                 <h3 class="cards__item-title">Villas at Poco Diablo</h3>
                             </a>
-                            <p class="cards__item-description"><span class="card-hostel">Гостиница</span><span><b>От 5000 ₽</b></span></p>
+                            </div>
+                            <div>
+                                <p class="cards__item-description"><span class="card-hostel">Гостиница</span><span><b>От 5000 ₽</b></span></p>
                             <ul class="list-button-cards">
                                 <li class="item-button-cards"><button class="cards__item-button cards__item-brown" type="button">Подробнее</button></li>
                                 <li class="item-button-cards"> <button class="cards__item-button cards__item-acrive-green" type="button">В избранном</button></li>
@@ -214,13 +221,17 @@
                                 </ul>
                                 <p class="cards-rang">Рейтинг: 9,2</p>
                             </div>
+                            </div>
                         </li>
                         <li class="cards__item">
-                            <a class="list-link-card" href="#">
+                            <div>
+                                <a class="list-link-card" href="#">
                                 <img class="cards__item-image" src="imges/hotel-card/Desert-Quail-Inn.jpg"  width="300" height="212">
                                 <h3 class="cards__item-title">Desert Quail Inn</h3>
                             </a>
-                            <p class="cards__item-description"><span class="card-hostel">Гостиница</span><span><b>От 2500 ₽</b></span></p>
+                            </div>
+                            <div>
+                                <p class="cards__item-description"><span class="card-hostel">Гостиница</span><span><b>От 2500 ₽</b></span></p>
                             <ul class="list-button-cards">
                                 <li class="item-button-cards"><button class="cards__item-button cards__item-brown" type="button">Подробнее</button></li>
                                 <li class="item-button-cards"> <button class="cards__item-button cards__item-blue " type="button">В избранное</button></li>
@@ -240,13 +251,17 @@
                                 </ul>
                                 <p class="cards-rang">Рейтинг: 6,9</p>
                             </div>
+                            </div>
                         </li>
                         <li class="cards__item">
-                            <a class="list-link-card" href="#">
+                            <div>
+                                <a class="list-link-card" href="#">
                                 <img class="cards__item-image" src="imges/hotel-card/Gree-Tree-Inn.jpg"  width="300" height="212">
                                 <h3 class="cards__item-title">GreenTree Inn</h3>
                             </a>
-                            <p class="cards__item-description"><span class="card-hostel">Гостиница</span><span><b>От 1500 ₽</b></span></p>
+                            </div>
+                            <div>
+                                <p class="cards__item-description"><span class="card-hostel">Гостиница</span><span><b>От 1500 ₽</b></span></p>
                             <ul class="list-button-cards">
                                 <li class="item-button-cards"><button class="cards__item-button cards__item-brown" type="button">Подробнее</button></li>
                                 <li class="item-button-cards"> <button class="cards__item-button cards__item-blue" type="button">В избранное</button></li>
@@ -263,6 +278,7 @@
 
                                 </ul>
                                 <p class="cards-rang">Рейтинг: 5,0</p>
+                            </div>
                             </div>
                         </li>
                     </ul>
@@ -359,20 +375,20 @@
                         </button>
                     </div>
                     <div class="contner-input">
-                        <label class="lable-zaezd" for="dataZaezda">Дата заезда:</label>
+                        <label class="lable-zaezd" for="arrival-date">Дата заезда:</label>
                         <div class="container-relative">
                             <div class="container-modal-data">
-                                <input class="input-modal-data" type="text" id="dataZaezda" name="Дата заезда:" value="27 апреля 2020" placeholder="Укажите дату" required>
+                                <input class="input-modal-data" type="text" id="arrival-date" name="Дата заезда:" value="27 апреля 2020" placeholder="Укажите дату" required>
                                 <span class="img-calendar"></span>
                             </div>
                             <span class="description-eror">Мы не можем отправить вас в прошлое</span>
                         </div>
                     </div>
                     <div class="contner-input">
-                        <label class="lable-viezd" for="dataViezda">Дата выезда:</label>
+                        <label class="date-of-departure" for="dataViezda">Дата выезда:</label>
                         <div class="container-relative">
                             <div class="container-modal-data">
-                                <input class="input-modal-data input-modal-extit" type="text" id="dataViezda" name="Дата выезда:" value="1 сентября 2021" placeholder="Укажите дату" required>
+                                <input class="input-modal-data input-modal-extit" type="text" id="date-of-departure" name="Дата выезда:" value="1 сентября 2021" placeholder="Укажите дату" required>
                                 <span class="img-calendar"></span>
                             </div>
                             <span class="description-good">На эти даты есть свободные номера. Пока есть.</span>
