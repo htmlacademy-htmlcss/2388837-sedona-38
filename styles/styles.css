@@ -44,7 +44,7 @@ body {
     margin: 0 auto;
     height: 100%;
     width: 1280px;
-    background: #F2F2F2;
+    background: #f2f2f2;
 }
 
 .body-container {
@@ -59,19 +59,13 @@ main {
     flex-grow: 1;
 }
 
-ul {
-    list-style: none;
-}
 
-button,
-input,
-select {
-    font-family: inherit;
-}
+
 
 .header__list {
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 .header__item:nth-child(2) a {
@@ -83,14 +77,14 @@ select {
     width: 20px;
     height: 20px;
     content: "12";
-    color: #FFF;
-    font-family: PT Sans;
+    color: #fff;
+    font-family: "PT Sans", sans-serif;
     font-size: 10px;
     font-style: normal;
     font-weight: 400;
     line-height: 10px;
     border-radius: 10px;
-    background: var(--icons-text, #7DB54F);
+    background: #7db54f;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -322,7 +316,7 @@ select {
 }
 
 .advantages__list-blue {
-    background-color: #82B3D3;
+    background-color: #82b3d3;
     color: #fff;
 }
 
@@ -378,7 +372,7 @@ select {
 }
 
 .interested__link {
-    color: #FFF;
+    color: #fff;
     text-align: center;
     font-size: 20px;
     font-weight: 700;
@@ -406,9 +400,9 @@ select {
 .form {
     background-image: url(../imges/form-back.jpg);
     background-size: cover;
-    background-color: aliceblue;
+    background-color: #f0f8ff;
     text-align: center;
-    color: #FFF;
+    color: #fff;
     background-repeat: no-repeat;
     padding: 96px 258px 104px 258px;
     min-height: 415px;
@@ -441,13 +435,13 @@ select {
     width: 452px;
     padding: 11px 20px;
     border-radius: 4px 0px 0px 4px;
-    background: #F2F2F2;
+    background: #f2f2f2;
     border: 0;
     color: #000;
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
-    font: inherit;
+    font-family: inherit;
     flex-shrink: 0;
 }
 
@@ -471,7 +465,7 @@ select {
 }
 
 .form__form-button {
-    color: #FFF;
+    color: #fff;
     text-align: center;
     font-size: 20px;
     font-weight: 700;
@@ -493,9 +487,10 @@ select {
 
 .btn-blue {
     background: #82B3D3;
-    color: #FFFFFF;
+    color: #fff;
     padding: 8px 50px;
     border-radius: 0px 4px 4px 0px;
+    font-family: inherit;
 
 }
 
@@ -520,14 +515,14 @@ select {
 
 /*каталог*/
 .main__header {
-    background-color: aliceblue;
+    background-color: #f0f8ff;
     background-image: url(../imges/catalog-back.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .heder__title {
-    color: #FFF;
+    color: #fff;
     font-size: 60px;
     font-weight: 700;
     line-height: 78px;
@@ -582,7 +577,7 @@ select {
 
 .fieldset__item-lable {
     position: relative;
-    color: #FFF;
+    color: #fff;
     font-size: 18px;
     font-weight: 400;
     line-height: 23px;
@@ -597,9 +592,10 @@ select {
     width: 20px;
     height: 20px;
     cursor: pointer;
-    background: white;
+    background: #fff;
     border-radius: 4px;
     border: none;
+    font-family: inherit;
 }
 
 .fieldset__item-input:checked {
@@ -617,6 +613,7 @@ select {
     border-radius: 50%;
     margin: 0;
     margin-right: 16px;
+    font-family: inherit;
 }
 
 .fieldset__item-input-radio:checked {
@@ -657,6 +654,7 @@ select {
     padding-top: 7px;
     height: 49px;
     background-color: #fff;
+    font-family: inherit;
 }
 
 .card-item__select:hover {
@@ -717,19 +715,22 @@ select {
 .cards {
     padding: 56px 55px 60px 70px;
 }
-
-.cards__item-image {
-    margin-bottom: 15px;
+.container-card{
+    margin-bottom: 15px
 }
-
+.container-card-down{
+    margin-top: auto;
+}
 .cards__item-title {
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
     margin: 0;
-    margin-bottom: 15px;
 }
-
+.cards__item-image{
+    margin-bottom: 17px;
+    display: block;
+}
 .cards__item-description {
     color: #333;
     font-size: 18px;
@@ -754,7 +755,7 @@ select {
 }
 
 .cards__item-button {
-    color: #FFF;
+    color: #fff;
     text-align: center;
     font-size: 16px;
     font-weight: 700;
@@ -763,6 +764,7 @@ select {
     cursor: pointer;
     border: none;
     width: 140px;
+    font-family: inherit;
 }
 
 .cards__item-brown {
@@ -770,6 +772,7 @@ select {
     background: #756157;
     padding: 8px 26px;
     min-height: 36px;
+    font-family: inherit;
 }
 
 .cards__item-brown:focus-visible,
@@ -783,15 +786,15 @@ select {
 
 .cards__item-blue {
     border-radius: 4px;
-    background: #82B3D3;
+    background: #82b3d3;
     padding: 8px 20px;
-    min-height: 36px
+    min-height: 36px;
 }
 
 .cards__item-acrive-green {
     padding: 8px 18px;
     border-radius: 4px;
-    background: #7DB54F;
+    background: #7db54f;
     min-height: 36px;
 }
 
@@ -812,12 +815,12 @@ select {
     text-transform: uppercase;
     padding: 9px 22px 8px 23px;
     border-radius: 4px;
-    background: #F2F2F2;
+    background: #f2f2f2;
     width: 140px;
 }
 
 .pagination__item-link {
-    color: #FFF;
+    color: #fff;
     font-size: 21px;
     font-weight: 700;
     line-height: 36px;
@@ -834,7 +837,7 @@ select {
 }
 
 .pagination__item {
-    background: #82B3D3;
+    background: #82b3d3;
     min-width: 60px;
     min-height: 60px;
     border-radius: 4px;
@@ -854,7 +857,7 @@ select {
 }
 
 .pagination__item-active {
-    background: #F2F2F2;
+    background: #f2f2f2;
     color: #000;
     border-radius: 4px;
 }
@@ -947,7 +950,7 @@ select {
 }
 
 .header__item-link {
-    color: #FFF;
+    color: #fff;
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
@@ -969,7 +972,9 @@ select {
 .fieldset-range__paragraph-input:active {
     opacity: 0.3;
 }
-
+.fieldset-range__paragraph-input{
+    font-family: inherit;
+}
 .item_link {
     display: block;
     padding: 22px 12px;
@@ -987,6 +992,7 @@ select {
     display: flex;
     flex-wrap: wrap;
     padding-top: 20px;
+    list-style: none;
 }
 
 
@@ -1005,6 +1011,7 @@ select {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+    list-style: none;
 }
 
 .service__list-item {
@@ -1051,6 +1058,7 @@ select {
     align-items: center;
     flex-wrap: wrap;
     width: 142px;
+    list-style: none;
 }
 
 .footer__list .footer__list-item {
@@ -1085,19 +1093,19 @@ select {
 .vk-svg,
 .yotube-svg,
 .tg-svg {
-    color: #83B3D3;
+    color: #83b3d3;
 }
 
 .tg-svg:active {
-    color: #68A2CA4D;
+    color: #68a2cA4d;
 }
 
 .vk-svg:active {
-    color: #68A2CA4D;
+    color: #68a2cA4d;
 }
 
 .yotube-svg:active {
-    color: #68A2CA4D;
+    color: #68a2ca4d;
 }
 
 .address {
@@ -1142,6 +1150,7 @@ fieldset {
     display: flex;
     margin-bottom: 40px;
     grid-gap: 10px;
+    list-style: none;
 }
 
 
@@ -1154,6 +1163,10 @@ fieldset {
     margin: 0;
     padding: 0;
     display: flex;
+}
+
+.main__header-form .calculator__fieldset-box ul {
+    list-style: none;
 }
 
 .calculator__fieldset-box {
@@ -1185,7 +1198,7 @@ fieldset {
 
 .fieldset-range__paragraph- {
     border-radius: 4px 0px 0px 4px;
-    background: #F2F2F2;
+    background: #f2f2f2;
     border: none;
     color: #000;
     font-size: 18px;
@@ -1307,7 +1320,7 @@ input::-webkit-inner-spin-button {
 .range-bar {
     position: absolute;
     height: 4px;
-    background: #FFF;
+    background: #fff;
 }
 
 .range-button {
@@ -1318,6 +1331,7 @@ input::-webkit-inner-spin-button {
     border: none;
     background: inherit;
     cursor: pointer;
+    font-family: inherit;
 
 }
 
@@ -1334,7 +1348,7 @@ input::-webkit-inner-spin-button {
 }
 
 .range-button:hover {
-    background-color: silver;
+    background-color: #c0c0c0;
 }
 
 .calculator-button {
@@ -1346,10 +1360,11 @@ input::-webkit-inner-spin-button {
     line-height: 20px;
     text-transform: uppercase;
     cursor: pointer;
+    font-family: inherit;
 }
 
 .calculator-button-apply {
-    background: #82B3D3;
+    background: #82b3d3;
     padding: 8px 50px 7px 50px;
 }
 
@@ -1442,18 +1457,19 @@ input::-webkit-inner-spin-button {
 
 }
 
-
+.cards ul{
+    list-style: none;
+}
 
 .cards-list .cards__item {
     width: 340px;
     min-height: 438px;
-    padding: 20px 19px 14px 19px;
+    padding: 22px 19px 14px 19px;
     border-radius: 4px;
     border: 1px solid #E6E6E6;
 }
 
 .list-link-card {
-    margin-bottom: 16px;
     color: inherit;
     text-decoration: none;
 }
@@ -1478,7 +1494,6 @@ input::-webkit-inner-spin-button {
 .cards__item {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .cards__item-description {
@@ -1521,7 +1536,7 @@ input::-webkit-inner-spin-button {
     min-height: 576px;
     padding: 71px 56px 67px 70px;
     border-radius: 30px;
-    background: #FFF;
+    background: #fff;
     box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.15);
     margin: auto auto;
 }
@@ -1590,7 +1605,7 @@ input::-webkit-inner-spin-button {
 }
 
 .description-eror {
-    color: #FF5757;
+    color: #ff5757;
     font-size: 16px;
     font-weight: 400;
     line-height: 21px;
@@ -1633,10 +1648,11 @@ input::-webkit-inner-spin-button {
 .input-modal-data {
     padding: 12px 107px 12px 20px;
     border-radius: 4px;
-    background: var(--basic-light, #F2F2F2);
+    background: #f2f2f2;
     border: 0;
     width: 440px;
     height: 48px;
+    font-family: inherit;
 }
 
 .content-container-dorm input {
@@ -1663,8 +1679,7 @@ input::-webkit-inner-spin-button {
     position: absolute;
     border: 0;
     padding: 0;
-    background: #F2F2F2;
-
+    background: #f2f2f2;
 }
 
 .minus {
@@ -1706,9 +1721,10 @@ input::-webkit-inner-spin-button {
     width: 31px;
     border: 0;
     padding: 0;
-    background: #F2F2F2;
+    background: #f2f2f2;
     height: 48px;
     text-align: center;
+    font-family: inherit;
 }
 
 .contner-adults {
@@ -1736,7 +1752,7 @@ input::-webkit-inner-spin-button {
     background: #333;
     box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.30);
     padding: 15px 18px 18px 22px;
-    color: #FFF;
+    color: #fff;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
@@ -1773,7 +1789,7 @@ input::-webkit-inner-spin-button {
 }
 
 .tooltip-toggle .tooltip-toggle-img {
-    color: #83B3D3;
+    color: #83b3d3;
 
 }
 
@@ -1794,8 +1810,8 @@ input::-webkit-inner-spin-button {
     border: 0;
     padding: 0;
     border-radius: 10px;
-    background: #83B3D3;
-    color: #FFF;
+    background: #83b3d3;
+    color: #fff;
     text-align: center;
     font-size: 20px;
     font-weight: 700;
@@ -1841,7 +1857,7 @@ input::-webkit-inner-spin-button {
 }
 
 .popover-type {
-    color: #FFF;
+    color: #fff;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
