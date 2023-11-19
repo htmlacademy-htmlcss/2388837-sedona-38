@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Pt Sans";
-    src: url(../fonts/ptsans-700.woff2) format("woff2");
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: "Pt Sans";
-    src: url(../fonts/ptsans-400.woff2) format("woff2");
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -58,9 +58,6 @@ body {
 main {
     flex-grow: 1;
 }
-
-
-
 
 .header__list {
     margin: 0;
@@ -144,7 +141,7 @@ main {
 }
 
 .item_link-search {
-    background-image: url(../imges/magnifying-glass.svg);
+    background-image: url("../imges/magnifying-glass.svg");
     background-repeat: no-repeat;
     background-position: center;
     min-width: 44px;
@@ -152,10 +149,8 @@ main {
     background-size: 20px 20px;
 }
 
-.item_link-search:hover {}
-
 .item_link-like {
-    background-image: url(../imges/like.svg);
+    background-image: url("../imges/like.svg");
     background-repeat: no-repeat;
     background-position: center;
     min-width: 44px;
@@ -165,7 +160,7 @@ main {
 }
 
 .welcome {
-    background-image: url(../imges/envelope.jpg);
+    background-image: url("../imges/envelope.jpg");
     background-size: cover;
     min-height: 485px;
     background-repeat: no-repeat;
@@ -204,7 +199,7 @@ main {
 }
 
 .item__image-hostel {
-    background-image: url(../imges/advantages/advantages-hostel.svg);
+    background-image: url("../imges/advantages/advantages-hostel.svg");
     background-repeat: no-repeat;
     width: 75px;
     height: 72px;
@@ -215,7 +210,7 @@ main {
 }
 
 .item__image-food {
-    background-image: url(../imges/advantages/advantages-food.svg);
+    background-image: url("../imges/advantages/advantages-food.svg");
     background-repeat: no-repeat;
     ;
     display: inline-block;
@@ -223,7 +218,7 @@ main {
 }
 
 .item__image-souvenir {
-    background-image: url(../imges/advantages/advantages-suvenir.svg);
+    background-image: url("../imges/advantages/advantages-suvenir.svg");
     background-repeat: no-repeat;
     width: 64px;
     height: 76px;
@@ -354,7 +349,6 @@ main {
     align-items: center;
 }
 
-
 .interested__title {
     font-size: 30px;
     font-weight: 700;
@@ -402,7 +396,7 @@ main {
 
 
 .form {
-    background-image: url(../imges/form-back.jpg);
+    background-image: url("../imges/form-back.jpg");
     background-size: cover;
     background-color: #f0f8ff;
     text-align: center;
@@ -520,7 +514,7 @@ main {
 /*каталог*/
 .main__header {
     background-color: #f0f8ff;
-    background-image: url(../imges/catalog-back.png);
+    background-image: url("../imges/catalog-back.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -533,7 +527,7 @@ main {
 }
 
 .bread__item-link {
-    background-image: url(../imges/bread-catalog-heder/bread-item-home.svg);
+    background-image: url("../imges/bread-catalog-heder/bread-item-home.svg");
     background-position: center;
     background-repeat: no-repeat;
     width: 13px;
@@ -548,7 +542,7 @@ main {
 
 .bread__item-hostel::before {
     content: "";
-    background-image: url(../imges/bread-catalog-heder/bread-item-strelka.svg);
+    background-image: url("../imges/bread-catalog-heder/bread-item-strelka.svg");
     display: inline-block;
     background-repeat: no-repeat;
     width: 8px;
@@ -603,7 +597,7 @@ main {
 }
 
 .fieldset__item-input:checked {
-    background-image: url(../imges/checkbox.svg);
+    background-image: url("../imges/checkbox.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 20px, 20px;
@@ -621,7 +615,7 @@ main {
 }
 
 .fieldset__item-input-radio:checked {
-    background-image: url(../imges/radio-box.svg);
+    background-image: url("../imges/radio-box.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 20px 20px;
@@ -651,7 +645,7 @@ main {
     font-weight: 400;
     line-height: 21px;
     appearance: none;
-    background-image: url(../imges/strelka.svg);
+    background-image: url("../imges/strelka.svg");
     background-repeat: no-repeat;
     width: 292px;
     background-position: 260px 14px;
@@ -684,7 +678,7 @@ main {
 }
 
 .button-card-item__card {
-    background-image: url(../imges/button-card/button-card.svg);
+    background-image: url("../imges/button-card/button-card.svg");
     background-repeat: no-repeat;
     background-position: center;
     width: 48px;
@@ -692,23 +686,23 @@ main {
 }
 
 .button-card-item__screen {
-    background-image: url(../imges/button-card/button-icran.svg);
+    background-image: url("../imges/button-card/button-icran.svg");
     background-repeat: no-repeat;
     background-position: center;
     width: 48px;
     height: 48px;
     border-radius: 4px;
-    border: 2px solid var(--forms-elements-1, #E5E5E5);
+    border: 2px  #E5E5E5;
 }
 
 .button-card-item__list {
-    background-image: url(../imges/button-card/button-list.svg);
+    background-image: url("../imges/button-card/button-list.svg");
     background-repeat: no-repeat;
     background-position: center;
     width: 48px;
     height: 48px;
     border-radius: 4px;
-    border: 2px solid var(--forms-elements-1, #E5E5E5);
+    border: 2px solid  #E5E5E5;
 }
 
 .button-card:focus {
@@ -775,9 +769,13 @@ main {
     width: 140px;
     font-family: inherit;
 }
-.cards__item-button:hover, .form__form-button:hover,.interested__link:hover{
+
+.cards__item-button:hover,
+.form__form-button:hover,
+.interested__link:hover {
     opacity: 0.5;
 }
+
 .cards__item-brown {
     border-radius: 4px;
     background: #756157;
@@ -810,7 +808,7 @@ main {
 }
 
 .star-item {
-    background-image: url(../imges/star.svg);
+    background-image: url("../imges/star.svg");
     background-repeat: no-repeat;
     background-position: center;
     width: 18px;
@@ -974,9 +972,10 @@ main {
     justify-content: center;
 }
 
-.form__form-email:hover{
+.form__form-email:hover {
     opacity: 0.9;
 }
+
 .item_link:active,
 .header__item-link:active,
 .header__navigation-link:active,
@@ -1169,8 +1168,6 @@ fieldset {
     list-style: none;
 }
 
-
-
 .bread li:last-child {
     margin: 0;
 }
@@ -1305,17 +1302,10 @@ input::-webkit-inner-spin-button {
     outline: 4px solid #83B3D3;
 }
 
-
-
-
-
-
-
 .fieldset-range__range {
     margin: 0;
     width: 287px;
 }
-
 
 .fieldset-range__paragraph {
     margin: 0;
@@ -1449,9 +1439,11 @@ input::-webkit-inner-spin-button {
     flex-wrap: wrap;
     width: 160px;
 }
-.button-card-list li:hover{
+
+.button-card-list li:hover {
     opacity: 0.5;
 }
+
 .card-item__select {
     position: relative;
     top: -3px;
@@ -1588,7 +1580,7 @@ input::-webkit-inner-spin-button {
     border-radius: 50%;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(../imges/exit.svg);
+    background-image: url("../imges/exit.svg");
     background-size: 14px 14px;
     cursor: pointer;
     padding: 0;
@@ -1658,7 +1650,7 @@ input::-webkit-inner-spin-button {
 
 .img-calendar {
     position: absolute;
-    background-image: url(../imges/calendar.svg);
+    background-image: url("../imges/calendar.svg");
     background-repeat: no-repeat;
     background-position: center;
     width: 16px;
@@ -1706,7 +1698,7 @@ input::-webkit-inner-spin-button {
 }
 
 .minus {
-    background-image: url(../imges/take-away.svg);
+    background-image: url("../imges/take-away.svg");
     background-position: center;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -1726,7 +1718,7 @@ input::-webkit-inner-spin-button {
 }
 
 .add {
-    background-image: url(../imges/add.svg);
+    background-image: url("../imges/add.svg");
     background-position: center;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -1787,7 +1779,7 @@ input::-webkit-inner-spin-button {
 
 .tooltip-text::before {
     content: "";
-    background-image: url(../imges/Triangle.svg);
+    background-image: url("../imges/Triangle.svg");
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -1895,7 +1887,7 @@ input::-webkit-inner-spin-button {
 
 .popover-type::before {
     position: absolute;
-    background-image: url(../imges/Triangle.svg);
+    background-image: url("../imges/Triangle.svg");
     background-repeat: no-repeat;
     background-position: center
 }
