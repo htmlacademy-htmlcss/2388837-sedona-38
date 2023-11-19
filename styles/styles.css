@@ -243,7 +243,8 @@ main {
     position: relative;
     width: 175px
 }
-.advantages__list-flex{
+
+.advantages__list-flex {
     display: flex;
 }
 
@@ -718,22 +719,27 @@ main {
 .cards {
     padding: 56px 55px 60px 70px;
 }
-.container-card{
+
+.container-card {
     margin-bottom: 15px
 }
-.container-card-down{
+
+.container-card-down {
     margin-top: auto;
 }
+
 .cards__item-title {
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
     margin: 0;
 }
-.cards__item-image{
+
+.cards__item-image {
     margin-bottom: 17px;
     display: block;
 }
+
 .cards__item-description {
     color: #333;
     font-size: 18px;
@@ -769,7 +775,9 @@ main {
     width: 140px;
     font-family: inherit;
 }
-
+.cards__item-button:hover, .form__form-button:hover,.interested__link:hover{
+    opacity: 0.5;
+}
 .cards__item-brown {
     border-radius: 4px;
     background: #756157;
@@ -897,7 +905,7 @@ main {
     top: 0;
 }
 
-.header__link:hover {
+.header__link-active:hover {
     opacity: 0.7
 }
 
@@ -966,7 +974,9 @@ main {
     justify-content: center;
 }
 
-
+.form__form-email:hover{
+    opacity: 0.9;
+}
 .item_link:active,
 .header__item-link:active,
 .header__navigation-link:active,
@@ -975,9 +985,11 @@ main {
 .fieldset-range__paragraph-input:active {
     opacity: 0.3;
 }
-.fieldset-range__paragraph-input{
+
+.fieldset-range__paragraph-input {
     font-family: inherit;
 }
+
 .item_link {
     display: block;
     padding: 22px 12px;
@@ -1006,8 +1018,8 @@ main {
 
 .advantages__list-image {
     object-fit: cover;
-     width: 800px;
-      height: 100%;
+    width: 800px;
+    height: 100%;
 }
 
 .servis__list {
@@ -1437,7 +1449,9 @@ input::-webkit-inner-spin-button {
     flex-wrap: wrap;
     width: 160px;
 }
-
+.button-card-list li:hover{
+    opacity: 0.5;
+}
 .card-item__select {
     position: relative;
     top: -3px;
@@ -1461,7 +1475,7 @@ input::-webkit-inner-spin-button {
 
 }
 
-.cards ul{
+.cards ul {
     list-style: none;
 }
 
@@ -1625,12 +1639,14 @@ input::-webkit-inner-spin-button {
     left: 20px;
     top: -5px;
 }
-.date-of-departure{
+
+.date-of-departure {
     position: relative;
     top: -5px;
     margin-right: 18px;
 }
-.lable-zaezd{
+
+.lable-zaezd {
     width: 137px;
     position: relative;
     top: 2px;
