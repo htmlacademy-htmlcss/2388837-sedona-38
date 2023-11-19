@@ -692,7 +692,7 @@ main {
     width: 48px;
     height: 48px;
     border-radius: 4px;
-    border: 2px  #E5E5E5;
+    border: 2px #E5E5E5;
 }
 
 .button-card-item__list {
@@ -702,7 +702,7 @@ main {
     width: 48px;
     height: 48px;
     border-radius: 4px;
-    border: 2px solid  #E5E5E5;
+    border: 2px solid #E5E5E5;
 }
 
 .button-card:focus {
@@ -1779,7 +1779,7 @@ input::-webkit-inner-spin-button {
 
 .tooltip-text::before {
     content: "";
-    background-image: url("../imges/Triangle.svg");
+    background-image: url("../imges/triangle.svg");
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
