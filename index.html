@@ -104,16 +104,18 @@
                             Большинство едет в Гранд Каньон и толпится там
                         </p>
                     </li>
-                    <li class=" advantages__list-item-img">
-                        <img class="advantages__list-image" src="imges/rocks.jpg" alt="Каньён" width="800" height="385">
-                    </li>
-                    <li class="advantages__list-item advantages__list-blue ">
-                        <h3 class="advantages__list-title ">
-                            Там есть <br>мост дьявола
-                        </h3>
-                        <p class="advantages__list-description">
-                            Да, по нему можно пройти! Если вы осмелитесь, разумеется
-                        </p>
+                    <li class=" advantages__list-flex">
+                        <div class="advantages__list-item-img">
+                            <img class="advantages__list-image" src="imges/rocks.jpg" alt="Каньён" width="800" height="385">
+                        </div>
+                        <div class="advantages__list-item advantages__list-blue">
+                            <h3 class="advantages__list-title ">
+                                Там есть <br>мост дьявола
+                            </h3>
+                            <p class="advantages__list-description">
+                                Да, по нему можно пройти! Если вы осмелитесь, разумеется
+                            </p>
+                        </div>
                     </li>
                 </ul>
             </section>
@@ -165,15 +167,14 @@
             </section>
             <section class="form">
                 <h2 class="form__title">
-                    <label for="newsletter">
-                        Подпишитесь на рассылку
-                    </label>
+                    Подпишитесь на рассылку
                 </h2>
                 <p class="form__description">
                     Только полезная информация и никакого спама,<br>честное бойскаутское!
                 </p>
                 <form class="form__form" action="https://echo.htmlacademy.ru/" method="post">
-                    <input class="form__form-email" type="email" name="email" placeholder="Ваш e-mail" required id="newsletter">
+                    <label for="email"></label>
+                    <input class="form__form-email form__form-email-active" type="email" name="email" placeholder="Ваш e-mail" required id="newsletter" id="email">
                     <button class="form__form-button btn-blue" type="submit">Подписаться</button>
                 </form>
             </section>
