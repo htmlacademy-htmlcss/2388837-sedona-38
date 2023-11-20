@@ -6,8 +6,8 @@
     <title>Sedon</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="shortcut icon" href="favicon%20(2).ico" type="image/x-icon">
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<link rel="icon"  href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -71,15 +71,15 @@
                     <li class="advantages__list-flex">
                         <div class="advantages__list-item advantages__list-blue">
                             <h3 class="advantages__list-title">
-                            Настоящий городок
-                        </h3>
-                        <p class="advantages__list-description">
-                            Седона — не аттракцион для туристов, там течёт своя жизнь
-                        </p>
+                                Настоящий городок
+                            </h3>
+                            <p class="advantages__list-description">
+                                Седона — не аттракцион для туристов, там течёт своя жизнь
+                            </p>
                         </div>
                         <div class="advantages__list-item-img">
-                        <img class="advantages__list-image" src="imges/hostel-usa.jpg" alt="Вид из отеля." width="800" height="385">
-                    </div>
+                            <img class="advantages__list-image" src="imges/hostel-usa.jpg" alt="Вид из отеля." width="800" height="385">
+                        </div>
                     </li>
 
                     <li class="advantages__list-item advantages__item ">
@@ -104,16 +104,18 @@
                             Большинство едет в Гранд Каньон и толпится там
                         </p>
                     </li>
-                    <li class=" advantages__list-item-img">
-                        <img class="advantages__list-image" src="imges/rocks.jpg" alt="Каньён" width="800" height="385">
-                    </li>
-                    <li class="advantages__list-item advantages__list-blue ">
-                        <h3 class="advantages__list-title ">
-                            Там есть <br>мост дьявола
-                        </h3>
-                        <p class="advantages__list-description">
-                            Да, по нему можно пройти! Если вы осмелитесь, разумеется
-                        </p>
+                    <li class="advantages__list-flex">
+                        <div class="advantages__list-item-img">
+                            <img class="advantages__list-image" src="imges/rocks.jpg" alt="Каньён" width="800" height="385">
+                        </div>
+                        <div class="advantages__list-item advantages__list-blue">
+                            <h3 class="advantages__list-title ">
+                                Там есть <br>мост дьявола
+                            </h3>
+                            <p class="advantages__list-description">
+                                Да, по нему можно пройти! Если вы осмелитесь, разумеется
+                            </p>
+                        </div>
                     </li>
                 </ul>
             </section>
@@ -165,15 +167,14 @@
             </section>
             <section class="form">
                 <h2 class="form__title">
-                    <label for="newsletter">
-                        Подпишитесь на рассылку
-                    </label>
+                    Подпишитесь на рассылку
                 </h2>
                 <p class="form__description">
                     Только полезная информация и никакого спама,<br>честное бойскаутское!
                 </p>
                 <form class="form__form" action="https://echo.htmlacademy.ru/" method="post">
-                    <input class="form__form-email" type="email" name="email" placeholder="Ваш e-mail" required id="newsletter">
+                    <label for="newsletter"></label>
+                    <input class="form__form-email form__form-email-active" type="email" name="email" placeholder="Ваш e-mail" required id="newsletter">
                     <button class="form__form-button btn-blue" type="submit">Подписаться</button>
                 </form>
             </section>

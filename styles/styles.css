@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Pt Sans";
-    src: url(../fonts/ptsans-700.woff2) format("woff2");
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: "Pt Sans";
-    src: url(../fonts/ptsans-400.woff2) format("woff2");
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -39,7 +39,7 @@ body {
     font-family: "PT Sans", sans-serif;
     font-size: 24px;
     line-height: 21px;
-    color: #000;
+    color: #000000;
     font-weight: 400;
     margin: 0 auto;
     height: 100%;
@@ -50,7 +50,7 @@ body {
 .body-container {
     display: flex;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #ffffff;
     min-height: 100%;
     padding: 0px 40px 0px 40px;
 }
@@ -58,9 +58,6 @@ body {
 main {
     flex-grow: 1;
 }
-
-
-
 
 .header__list {
     margin: 0;
@@ -77,7 +74,7 @@ main {
     width: 20px;
     height: 20px;
     content: "12";
-    color: #fff;
+    color: #ffffff;
     font-family: "PT Sans", sans-serif;
     font-size: 10px;
     font-style: normal;
@@ -106,7 +103,7 @@ main {
 .item_link:focus-visible,
 .header__item-link:focus-visible,
 .interested__link:focus-visible {
-    outline: 3px solid #83B3D3;
+    outline: 3px solid #83b3d3;
     border-radius: 6px;
 }
 
@@ -144,7 +141,7 @@ main {
 }
 
 .item_link-search {
-    background-image: url(../imges/magnifying-glass.svg);
+    background-image: url("../imges/magnifying-glass.svg");
     background-repeat: no-repeat;
     background-position: center;
     min-width: 44px;
@@ -152,10 +149,8 @@ main {
     background-size: 20px 20px;
 }
 
-.item_link-search:hover {}
-
 .item_link-like {
-    background-image: url(../imges/like.svg);
+    background-image: url("../imges/like.svg");
     background-repeat: no-repeat;
     background-position: center;
     min-width: 44px;
@@ -165,7 +160,7 @@ main {
 }
 
 .welcome {
-    background-image: url(../imges/envelope.jpg);
+    background-image: url("../imges/envelope.jpg");
     background-size: cover;
     min-height: 485px;
     background-repeat: no-repeat;
@@ -195,7 +190,7 @@ main {
 }
 
 .sedon-city__description {
-    color: #333;
+    color: #333333;
     font-size: 22px;
     font-weight: 400;
     line-height: 26px;
@@ -204,7 +199,7 @@ main {
 }
 
 .item__image-hostel {
-    background-image: url(../imges/advantages/advantages-hostel.svg);
+    background-image: url("../imges/advantages/advantages-hostel.svg");
     background-repeat: no-repeat;
     width: 75px;
     height: 72px;
@@ -215,7 +210,7 @@ main {
 }
 
 .item__image-food {
-    background-image: url(../imges/advantages/advantages-food.svg);
+    background-image: url("../imges/advantages/advantages-food.svg");
     background-repeat: no-repeat;
     ;
     display: inline-block;
@@ -223,7 +218,7 @@ main {
 }
 
 .item__image-souvenir {
-    background-image: url(../imges/advantages/advantages-suvenir.svg);
+    background-image: url("../imges/advantages/advantages-suvenir.svg");
     background-repeat: no-repeat;
     width: 64px;
     height: 76px;
@@ -243,7 +238,8 @@ main {
     position: relative;
     width: 175px
 }
-.advantages__list-flex{
+
+.advantages__list-flex {
     display: flex;
 }
 
@@ -320,7 +316,7 @@ main {
 
 .advantages__list-blue {
     background-color: #82b3d3;
-    color: #fff;
+    color: #ffffff;
 }
 
 .come-sedon {
@@ -338,7 +334,7 @@ main {
 }
 
 .come-sedon__description {
-    color: #333;
+    color: #333333;
     font-size: 22px;
     font-weight: 400;
     line-height: 26px;
@@ -353,7 +349,6 @@ main {
     align-items: center;
 }
 
-
 .interested__title {
     font-size: 30px;
     font-weight: 700;
@@ -365,7 +360,7 @@ main {
 }
 
 .interested__description {
-    color: #333;
+    color: #333333;
     font-size: 22px;
     font-weight: 400;
     line-height: 26px;
@@ -375,7 +370,7 @@ main {
 }
 
 .interested__link {
-    color: #fff;
+    color: #ffffff;
     text-align: center;
     font-size: 20px;
     font-weight: 700;
@@ -398,14 +393,12 @@ main {
     transition: 0.3;
 }
 
-
-
 .form {
-    background-image: url(../imges/form-back.jpg);
+    background-image: url("../imges/form-back.jpg");
     background-size: cover;
     background-color: #f0f8ff;
     text-align: center;
-    color: #fff;
+    color: #ffffff;
     background-repeat: no-repeat;
     padding: 96px 258px 104px 258px;
     min-height: 415px;
@@ -419,6 +412,10 @@ main {
     margin: 0;
     margin-bottom: 20px;
     padding: 0 70px;
+}
+
+.lable-title:hover {
+    cursor: pointer;
 }
 
 .form__description {
@@ -440,7 +437,7 @@ main {
     border-radius: 4px 0px 0px 4px;
     background: #f2f2f2;
     border: 0;
-    color: #000;
+    color: #000000;
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
@@ -449,18 +446,18 @@ main {
 }
 
 .form__form-email::placeholder {
-    color: #000;
+    color: #000000;
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
 }
 
 .form__form-email:focus-visible {
-    outline: 3px solid #83B3D3;
+    outline: 3px solid #83b3d3;
 }
 
 .form__form-email::placeholder {
-    color: #000;
+    color: #000000;
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
@@ -468,7 +465,6 @@ main {
 }
 
 .form__form-button {
-    color: #fff;
     text-align: center;
     font-size: 20px;
     font-weight: 700;
@@ -489,8 +485,8 @@ main {
 }
 
 .btn-blue {
-    background: #82B3D3;
-    color: #fff;
+    background: #82b3d3;
+    color: #ffffff;
     padding: 8px 50px;
     border-radius: 0px 4px 4px 0px;
     font-family: inherit;
@@ -498,7 +494,7 @@ main {
 }
 
 .address_phone {
-    color: #000;
+    color: #000000;
     text-align: center;
     font-size: 40px;
     font-style: normal;
@@ -519,20 +515,20 @@ main {
 /*каталог*/
 .main__header {
     background-color: #f0f8ff;
-    background-image: url(../imges/catalog-back.png);
+    background-image: url("../imges/catalog-back.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .heder__title {
-    color: #fff;
+    color: #ffffff;
     font-size: 60px;
     font-weight: 700;
     line-height: 78px;
 }
 
 .bread__item-link {
-    background-image: url(../imges/bread-catalog-heder/bread-item-home.svg);
+    background-image: url("../imges/bread-catalog-heder/bread-item-home.svg");
     background-position: center;
     background-repeat: no-repeat;
     width: 13px;
@@ -541,13 +537,13 @@ main {
 }
 
 .bread__item:focus {
-    outline: 3px solid #83B3D3;
+    outline: 3px solid #83b3d3;
     border-radius: 15px;
 }
 
 .bread__item-hostel::before {
     content: "";
-    background-image: url(../imges/bread-catalog-heder/bread-item-strelka.svg);
+    background-image: url("../imges/bread-catalog-heder/bread-item-strelka.svg");
     display: inline-block;
     background-repeat: no-repeat;
     width: 8px;
@@ -556,14 +552,14 @@ main {
 }
 
 .bread__item-hostel {
-    color: #FFF;
+    color: #ffffff;
     font-size: 16px;
     display: flex;
     grid-gap: 10px;
 }
 
 .fieldset__legend {
-    color: #FFF;
+    color: #ffffff;
     font-size: 20px;
     font-weight: 700;
     line-height: 24px;
@@ -580,7 +576,7 @@ main {
 
 .fieldset__item-lable {
     position: relative;
-    color: #fff;
+    color: #ffffff;
     font-size: 18px;
     font-weight: 400;
     line-height: 23px;
@@ -595,14 +591,14 @@ main {
     width: 20px;
     height: 20px;
     cursor: pointer;
-    background: #fff;
+    background: #ffffff;
     border-radius: 4px;
     border: none;
     font-family: inherit;
 }
 
 .fieldset__item-input:checked {
-    background-image: url(../imges/checkbox.svg);
+    background-image: url("../imges/checkbox.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 20px, 20px;
@@ -612,7 +608,7 @@ main {
     appearance: none;
     width: 20px;
     height: 20px;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 50%;
     margin: 0;
     margin-right: 16px;
@@ -620,7 +616,7 @@ main {
 }
 
 .fieldset__item-input-radio:checked {
-    background-image: url(../imges/radio-box.svg);
+    background-image: url("../imges/radio-box.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 20px 20px;
@@ -628,7 +624,7 @@ main {
 
 .fieldset__item-input:focus-visible,
 .fieldset__item-input-radio:focus-visible {
-    outline: 3px solid #83B3D3;
+    outline: 3px solid #83b3d3;
 }
 
 .card-items {
@@ -644,19 +640,19 @@ main {
 .card-item__select {
     padding: 14px 100px 14px 20px;
     border-radius: 4px;
-    border: 2px solid #E5E5E5;
-    color: #333;
+    border: 2px solid #e5e5e5;
+    color: #333333;
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
     appearance: none;
-    background-image: url(../imges/strelka.svg);
+    background-image: url("../imges/strelka.svg");
     background-repeat: no-repeat;
     width: 292px;
     background-position: 260px 14px;
     padding-top: 7px;
     height: 49px;
-    background-color: #fff;
+    background-color: #ffffff;
     font-family: inherit;
 }
 
@@ -668,13 +664,9 @@ main {
     opacity: 0.4;
 }
 
-.card-item__select:focus-visible {
-    outline: 4px solid #83B3D3;
-}
-
 .button-card_active {
     border-radius: 4px;
-    border: 2px solid #000;
+    border: 2px solid #000000;
 }
 
 .header__navigation-item {
@@ -683,7 +675,7 @@ main {
 }
 
 .button-card-item__card {
-    background-image: url(../imges/button-card/button-card.svg);
+    background-image: url("../imges/button-card/button-card.svg");
     background-repeat: no-repeat;
     background-position: center;
     width: 48px;
@@ -691,51 +683,55 @@ main {
 }
 
 .button-card-item__screen {
-    background-image: url(../imges/button-card/button-icran.svg);
+    background-image: url("../imges/button-card/button-icran.svg");
     background-repeat: no-repeat;
     background-position: center;
     width: 48px;
     height: 48px;
     border-radius: 4px;
-    border: 2px solid var(--forms-elements-1, #E5E5E5);
+    border: 2px solid #e5e5e5;
 }
 
 .button-card-item__list {
-    background-image: url(../imges/button-card/button-list.svg);
+    background-image: url("../imges/button-card/button-list.svg");
     background-repeat: no-repeat;
     background-position: center;
     width: 48px;
     height: 48px;
     border-radius: 4px;
-    border: 2px solid var(--forms-elements-1, #E5E5E5);
+    border: 2px solid #e5e5e5;
 }
 
 .button-card:focus {
-    outline: 4px solid #83B3D3;
+    outline: 4px solid #83b3d3;
 }
-
 
 .cards {
     padding: 56px 55px 60px 70px;
 }
-.container-card{
+
+.container-card {
     margin-bottom: 15px
 }
-.container-card-down{
+
+.container-card-down {
     margin-top: auto;
 }
+
 .cards__item-title {
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
     margin: 0;
 }
-.cards__item-image{
+
+.cards__item-image {
     margin-bottom: 17px;
     display: block;
 }
+
 .cards__item-description {
-    color: #333;
+    color: #333333;
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
@@ -758,7 +754,7 @@ main {
 }
 
 .cards__item-button {
-    color: #fff;
+    color: #ffffff;
     text-align: center;
     font-size: 16px;
     font-weight: 700;
@@ -768,6 +764,19 @@ main {
     border: none;
     width: 140px;
     font-family: inherit;
+}
+
+.cards__item-button:hover,
+.form__form-button:hover {
+    opacity: 0.5;
+}
+
+.interested__link:hover {
+    opacity: 0.8;
+}
+
+.interested__link:active {
+    opacity: 0.5;
 }
 
 .cards__item-brown {
@@ -780,7 +789,7 @@ main {
 
 .cards__item-brown:focus-visible,
 .cards__item-acrive-green:focus-visible {
-    outline: 4px solid #83B3D3;
+    outline: 4px solid #83b3d3;
 }
 
 .cards__item-blue:focus-visible {
@@ -802,7 +811,7 @@ main {
 }
 
 .star-item {
-    background-image: url(../imges/star.svg);
+    background-image: url("../imges/star.svg");
     background-repeat: no-repeat;
     background-position: center;
     width: 18px;
@@ -810,7 +819,7 @@ main {
 
 .cards-rang {
     display: inline-block;
-    color: #333;
+    color: #333333;
     text-align: center;
     font-size: 16px;
     font-weight: 400;
@@ -823,7 +832,7 @@ main {
 }
 
 .pagination__item-link {
-    color: #fff;
+    color: #ffffff;
     font-size: 21px;
     font-weight: 700;
     line-height: 36px;
@@ -834,8 +843,8 @@ main {
 
 .form-catalog {
     background-image: none;
-    color: #000;
-    background-color: #fff;
+    color: #000000;
+    background-color: #ffffff;
     padding: 96px 258px 104px 258px;
 }
 
@@ -861,7 +870,7 @@ main {
 
 .pagination__item-active {
     background: #f2f2f2;
-    color: #000;
+    color: #000000;
     border-radius: 4px;
 }
 
@@ -879,7 +888,7 @@ main {
 }
 
 .pagination__link-active {
-    color: #000;
+    color: #000000;
 }
 
 
@@ -897,7 +906,7 @@ main {
     top: 0;
 }
 
-.header__link:hover {
+.header__link-active:hover {
     opacity: 0.7
 }
 
@@ -906,7 +915,7 @@ main {
 }
 
 .header__link:focus-visible {
-    outline: 3px solid #83B3D3;
+    outline: 3px solid #83b3d3;
 }
 
 .header__navigation {
@@ -953,7 +962,7 @@ main {
 }
 
 .header__item-link {
-    color: #fff;
+    color: #ffffff;
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
@@ -966,18 +975,32 @@ main {
     justify-content: center;
 }
 
+.form__form-email:hover {
+    cursor: pointer;
+    background-color: #a5a5a5;
+}
+
+.form__form-email:active {
+    background: #89cff0;
+
+}
+
+.form__form-email-active:active {
+    background: #89cff0;
+}
 
 .item_link:active,
 .header__item-link:active,
 .header__navigation-link:active,
-.form__form-email:active,
 .form__form-button:active,
 .fieldset-range__paragraph-input:active {
     opacity: 0.3;
 }
-.fieldset-range__paragraph-input{
+
+.fieldset-range__paragraph-input {
     font-family: inherit;
 }
+
 .item_link {
     display: block;
     padding: 22px 12px;
@@ -1006,8 +1029,8 @@ main {
 
 .advantages__list-image {
     object-fit: cover;
-     width: 800px;
-      height: 100%;
+    width: 800px;
+    height: 100%;
 }
 
 .servis__list {
@@ -1035,7 +1058,7 @@ main {
 .servis__list-title {
     margin: 0;
     margin-bottom: 30px;
-    color: #000;
+    color: #000000;
     text-align: center;
     font-size: 24px;
     font-weight: 700;
@@ -1090,7 +1113,7 @@ main {
 .logo-html:focus-visible,
 .calculator-button-reset:focus-visible,
 .range-button:focus-visible {
-    outline: 4px solid #83B3D3;
+    outline: 4px solid #83b3d3;
     border-radius: 6px;
 }
 
@@ -1101,11 +1124,11 @@ main {
 }
 
 .tg-svg:active {
-    color: #68a2cA4d;
+    color: #68a2ca4d;
 }
 
 .vk-svg:active {
-    color: #68a2cA4d;
+    color: #68a2ca4d;
 }
 
 .yotube-svg:active {
@@ -1123,7 +1146,7 @@ main {
 }
 
 .svg-html {
-    color: black;
+    color: #000000;
 }
 
 .svg-html:hover {
@@ -1131,7 +1154,7 @@ main {
 }
 
 .svg-html:active {
-    color: #7561574D;
+    color: #7561574d;
 }
 
 /*сетка каталог маин*/
@@ -1156,8 +1179,6 @@ fieldset {
     grid-gap: 10px;
     list-style: none;
 }
-
-
 
 .bread li:last-child {
     margin: 0;
@@ -1204,7 +1225,7 @@ fieldset {
     border-radius: 4px 0px 0px 4px;
     background: #f2f2f2;
     border: none;
-    color: #000;
+    color: #000000;
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
@@ -1283,27 +1304,20 @@ input::-webkit-inner-spin-button {
 
 
 .fieldset-range__paragraph-input[value] {
-    color: #000;
+    color: #000000;
     font-size: 18px;
     font-weight: 700;
     line-height: 23px;
 }
 
 .fieldset-range__paragraph-input:focus-visible {
-    outline: 4px solid #83B3D3;
+    outline: 4px solid #83b3d3;
 }
-
-
-
-
-
-
 
 .fieldset-range__range {
     margin: 0;
     width: 287px;
 }
-
 
 .fieldset-range__paragraph {
     margin: 0;
@@ -1324,7 +1338,7 @@ input::-webkit-inner-spin-button {
 .range-bar {
     position: absolute;
     height: 4px;
-    background: #fff;
+    background: #ffffff;
 }
 
 .range-button {
@@ -1355,10 +1369,14 @@ input::-webkit-inner-spin-button {
     background-color: #c0c0c0;
 }
 
+.range-button:active {
+    background: #545454;
+}
+
 .calculator-button {
     border: none;
     border-radius: 4px;
-    color: #fff;
+    color: #ffffff;
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
@@ -1438,6 +1456,14 @@ input::-webkit-inner-spin-button {
     width: 160px;
 }
 
+.button-card-list li :hover {
+    opacity: 0.6;
+}
+
+.button-card-list li button:active {
+    background-color: #82b3d3;
+}
+
 .card-item__select {
     position: relative;
     top: -3px;
@@ -1446,7 +1472,7 @@ input::-webkit-inner-spin-button {
 
 .button-card {
     cursor: pointer;
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
 .cards-list {
@@ -1456,12 +1482,12 @@ input::-webkit-inner-spin-button {
     margin: 0;
     grid-gap: 20px;
     padding-bottom: 40px;
-    border-bottom: 1px solid #E6E6E6;
+    border-bottom: 1px solid #e6e6e6;
     margin-bottom: 40px;
 
 }
 
-.cards ul{
+.cards ul {
     list-style: none;
 }
 
@@ -1470,7 +1496,7 @@ input::-webkit-inner-spin-button {
     min-height: 438px;
     padding: 22px 19px 14px 19px;
     border-radius: 4px;
-    border: 1px solid #E6E6E6;
+    border: 1px solid #e6e6e6;
 }
 
 .list-link-card {
@@ -1540,7 +1566,7 @@ input::-webkit-inner-spin-button {
     min-height: 576px;
     padding: 71px 56px 67px 70px;
     border-radius: 30px;
-    background: #fff;
+    background: #ffffff;
     box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.15);
     margin: auto auto;
 }
@@ -1574,7 +1600,7 @@ input::-webkit-inner-spin-button {
     border-radius: 50%;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(../imges/exit.svg);
+    background-image: url("../imges/exit.svg");
     background-size: 14px 14px;
     cursor: pointer;
     padding: 0;
@@ -1618,19 +1644,21 @@ input::-webkit-inner-spin-button {
 }
 
 .description-good {
-    color: #333;
+    color: #333333;
     font-size: 16px;
     font-weight: 400;
     line-height: 21px;
     left: 20px;
     top: -5px;
 }
-.date-of-departure{
+
+.date-of-departure {
     position: relative;
     top: -5px;
     margin-right: 18px;
 }
-.lable-zaezd{
+
+.lable-zaezd {
     width: 137px;
     position: relative;
     top: 2px;
@@ -1642,7 +1670,7 @@ input::-webkit-inner-spin-button {
 
 .img-calendar {
     position: absolute;
-    background-image: url(../imges/calendar.svg);
+    background-image: url("../imges/calendar.svg");
     background-repeat: no-repeat;
     background-position: center;
     width: 16px;
@@ -1690,7 +1718,7 @@ input::-webkit-inner-spin-button {
 }
 
 .minus {
-    background-image: url(../imges/take-away.svg);
+    background-image: url("../imges/take-away.svg");
     background-position: center;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -1710,7 +1738,7 @@ input::-webkit-inner-spin-button {
 }
 
 .add {
-    background-image: url(../imges/add.svg);
+    background-image: url("../imges/add.svg");
     background-position: center;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -1756,10 +1784,10 @@ input::-webkit-inner-spin-button {
 .tooltip-text {
     width: 256px;
     border-radius: 10px;
-    background: #333;
+    background: #333333;
     box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.30);
     padding: 15px 18px 18px 22px;
-    color: #fff;
+    color: #ffffff;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
@@ -1771,7 +1799,7 @@ input::-webkit-inner-spin-button {
 
 .tooltip-text::before {
     content: "";
-    background-image: url(../imges/Triangle.svg);
+    background-image: url("../imges/triangle.svg");
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -1818,7 +1846,7 @@ input::-webkit-inner-spin-button {
     padding: 0;
     border-radius: 10px;
     background: #83b3d3;
-    color: #fff;
+    color: #ffffff;
     text-align: center;
     font-size: 20px;
     font-weight: 700;
@@ -1836,7 +1864,7 @@ input::-webkit-inner-spin-button {
 .minus:focus,
 .add:focus,
 .button-find:focus {
-    outline: 3px solid #83B3D3;
+    outline: 3px solid #83b3d3;
 }
 
 .input-modal-extit {
@@ -1864,14 +1892,14 @@ input::-webkit-inner-spin-button {
 }
 
 .popover-type {
-    color: #fff;
+    color: #ffffff;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
     width: 256px;
     height: 143px;
     border-radius: 10px;
-    background: #333;
+    background: #333333;
     box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.30);
     padding: 15px 18px 18px 22px;
     position: relative;
@@ -1879,7 +1907,7 @@ input::-webkit-inner-spin-button {
 
 .popover-type::before {
     position: absolute;
-    background-image: url(../imges/Triangle.svg);
+    background-image: url("../imges/Triangle.svg");
     background-repeat: no-repeat;
     background-position: center
 }
